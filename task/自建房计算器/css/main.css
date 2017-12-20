@@ -1,0 +1,260 @@
+a:link,a:visited{text-decoration:none;transition:all 0.2s ease-out 0s;}
+a:hover{text-decoration:none; color:#ff6900;}
+
+/*banner开始*/
+.grid{width: 1170px;margin:0 auto;}
+.banner-dh{
+    background:rgba(0, 0, 0, 0) url("../images/banner.jpg") no-repeat scroll center center;
+    margin-top:45px;
+    height: 660px;
+    width: 100%;
+}
+.main-jisuan{
+    height: 500px;
+    width: 1100px;
+    margin: 0 auto;
+}
+.main-jisuan .main-jisuan-bjia{
+    width: 1100px;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 24px;
+    color: #444;
+    font-family: '微软雅黑';
+}
+.main-jisuan .main-jisuan-bjia span{
+    color:#f0935c ;
+}
+.main-jisuan .main-jisuan-items{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 990px;
+    height: 400px;
+    margin: 30px auto 0;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-item{
+    width: 600px;
+    height: 300px;
+    float: left;
+    padding: 50px;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-item li{
+    height: 40px;
+    margin-bottom: 24px;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-item li span{
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-family: '微软雅黑';
+}
+.main-jisuan .main-jisuan-items .main-jisuan-item li input{
+    height: 40px;
+    width: 470px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #555;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-item li select{
+    height: 40px;
+    width: 475px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #555;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-item li select option{
+    height: 40px;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-decora{
+    background:url("../images/jisuan_bj_b.png") no-repeat scroll center center;
+    height: 100%;
+    width: 200px;
+    float: left;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-decora a{
+    background-color: #ff6900;
+    border: 7px solid #e9eaef;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    height: 85px;
+    line-height: 1.2;
+    margin: 133px auto 0;
+    padding-top: 36px;
+    text-align: center;
+    width: 120px;
+}
+.main-jisuan .main-jisuan-items .main-jisuan-decora a:hover{
+    background-color: #ff9000;
+}
+/*banner结束*/
+
+/*计算结果显示  开始*/
+.jisuan_result{
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 75px;
+}
+.jisuan_result .jisuan_result_title{
+    width: 1100px;
+    text-align: center;
+    font-size: 32px;
+    color: #262626;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    margin: 40px auto;
+}
+.jisuan_result .jisuan_result_title span{
+    color: #f46f1f;
+}
+.jisuan_result .jisuan_result_fat{
+    color: #f46f1f;
+}
+.jisuan_result_fat{
+    width: 890px;
+    height: 110px;
+    background-color: #f2e5dc;
+    margin: 0 auto;
+}
+.jisuan_result_tit{
+    width: 250px;
+    text-align: center;
+    height: 100%;
+    line-height: 110px;
+    font-size: 30px;
+    color: #262626;
+    font-family: '微软雅黑';
+    float: left;
+ }
+.jisuan_result_type{
+    width: 390px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #262626;
+    font-family: '微软雅黑';
+    float: left;
+}
+.jisuan_result_type span{
+    line-height: 35px;
+    text-align: left;
+}
+.jisuan_result_type_l{
+    margin-left: 60px;
+    width: 120px;
+    float: left;
+}
+.jisuan_result_type_r{
+    margin-left: 60px;
+    width: 150px;
+}
+.jisuan_result_total{
+    width: 250px;
+    text-align: center;
+    height: 100%;
+    line-height: 110px;
+    font-size: 18px;
+    color: #262626;
+    font-family: '微软雅黑';
+    float: left;
+}
+.jisuan_result_sgt{
+    width: 890px;
+    height: 180px;
+    background-color: #f3cab2;
+    margin: 10px auto 0;
+}
+.jisuan_result_sgt .jisuan_result_tit{
+    line-height: 180px;
+}
+.jisuan_result_sgt .jisuan_result_total{
+    line-height: 180px;
+}
+.jisuan_result_xgt{
+    width: 890px;
+    height: 145px;
+    background-color: #f3a373;
+    margin: 10px auto 60px;
+}
+.jisuan_result_xgt .jisuan_result_tit{
+    line-height: 145px;
+}
+.jisuan_result_xgt .jisuan_result_total{
+    line-height: 145px;
+}
+.kf_prompt{
+    width: 551px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    color: #262626;
+    font-family: '微软雅黑';
+}
+/*计算结果显示  结束*/
+
+
+/*改变导航颜色*/
+.header_dh{
+    background-color: #ff7300;
+}
+.header_dh .header_nav{
+    background-color: #ff7300;
+}
+
+.header_dh .header_nav ul li a:hover{
+    background-color:#ff6000;
+}
+.header_dh .header_nav ul li a.over{
+    background-color:#ff6000;
+}
+.hot-permission {
+    left: 92px;
+    position: absolute;
+    top: -14px;
+    width: 60px;
+    z-index: 1;
+}
+.hot-permission img {
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+.hot-permission span {
+    background-color: red;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+.ui-header-search .input-append .ui-btn-inverse.z_n_ss {
+     background-color: #ff7300;
+
+    border: 3px solid #ff7300;
+
+}
+.ui-header-search .search-query {
+
+    border: 3px solid #ff7300;
+
+}
+.selectServe .selectpick_div {
+        border-left: solid 3px #ff7300;
+}
+.selectServe .selectpick_options {
+        border-color: #ff7300;
+}
+.selectServe .selectpick_options ul li:hover{
+    background-color: #ff7300;
+}
+.ui-header-search input.search-query:focus{border-color:#ff7300}
+.ui-header-search .input-append .ui-btn-inverse.z_n_ss{background-color:#ff7300; border:3px solid #ff7300;}
+.ui-header-search .input-append .ui-btn-inverse.z_n_ss:hover{ background:#ff6000;border:3px solid #ff6000;}
+
+
+/*改变导航颜色*/

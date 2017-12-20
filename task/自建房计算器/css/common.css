@@ -1,0 +1,242 @@
+/*------------------ width op ------------------*/
+.w-100 {
+    width: 100%;
+}
+/*------------------ width ed ------------------*/
+/*------------------ clear op ------------------*/
+.clear {
+    clear: both;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+/*------------------ clear ed ------------------*/
+/*------------------ 瀹氫綅 op ------------------*/
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.po-r {
+    position: relative;
+}
+/*------------------ 瀹氫綅 ed ------------------*/
+/*------------------ a op ------------------*/
+a {
+    text-decoration: none;
+}
+a:hover, a:focus {
+    outline: thin dotted;
+    text-decoration: underline;
+}
+a:link, a:visited {
+    /*color: #666;*/
+    text-decoration: none;
+}
+a:active, a:hover {
+    outline: 0 none;
+}
+
+/*------------------ a ed ------------------*/
+/*------------------ 鍐呭杈硅窛 op ------------------*/
+.m_p_0 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.mb300 {
+    margin-bottom: 300px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mtb5 {
+    margin: 5px auto;
+}
+.mtb10 {
+    margin: 10px auto;
+}
+.mtb15 {
+    margin: 15px auto;
+}
+.mtb20 {
+    margin: 20px auto;
+}
+.mtb50 {
+    margin: 50px auto;
+}
+/*------------------ 鍐呭杈硅窛 ed ------------------*/
+
+/*------------------ font op ------------------*/
+/* font-size op */
+.f12{
+    font-size: 12px;
+}
+.f14{
+    font-size: 14px;
+}
+.f16{
+    font-size: 16px;
+}
+.f18{
+    font-size: 18px;
+}
+.f20{
+    font-size: 20px;
+}
+.f22{
+    font-size: 22px;
+}
+.f24{
+    font-size: 24px;
+}
+/* font-size ed */
+/* 鏂囧瓧瀵归綈 op */
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* 鏂囧瓧瀵归綈 ed */
+/* color op */
+.white {
+    color: #fff;
+}
+.cf60{
+    color: #f60;
+}
+.c333{
+    color: #333;
+}
+.c666{
+    color: #666;
+}
+.c999{
+    color: #999;
+}
+.tb_green {
+    color: #009900;
+}
+.tb_red {
+    color: #f00;
+}
+.tb_blue {
+    color: #0099dd;
+}
+.tb_gray {
+    color: #bcbcbc;
+}
+/* color ed */
+/*------------------ font ed ------------------*/
+/*------------------ from op ------------------*/
+select, textarea {
+    height: auto;
+}
+input, textarea {
+    color: #666;
+    font-family: "Microsoft Yahei";
+    outline: medium none;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type="button"],
+input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+label, select {
+    cursor: pointer;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+button:-moz-focus-inner, input:-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+/*------------------ from ed ------------------*/
+/*------------------ 鏄剧ず & 闅愯棌 op ------------------*/
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.invisible {
+    visibility: hidden;
+}
+.ofw {
+    overflow: hidden;
+}
+/*------------------ 鏄剧ず & 闅愯棌 ed ------------------*/
+/*------------------ img & body op ------------------*/
+img {
+    max-width: 100%;
+    border: medium none;
+vertical-align: middle;
+}
+body {
+background-color: #fff;
+font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif,Helvetica Neue;
+font-size: 12px;
+line-height: 1.5;
+margin: 0;
+padding: 0;
+}
+/*------------------ img & body ed ------------------*/
+/*------------------ 鑳屾櫙棰滆壊 op ------------------*/
+.bg-ee{ background-color: #eee;}
+/*------------------ 鑳屾櫙棰滆壊 ed ------------------*/
+/*------------------ 闄愬埗瀛楁暟 op ------------------*/
+.word-limit{
+    display: inline-block;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor: pointer;
+}
+/*------------------ 闄愬埗瀛楁暟 ed ------------------*/
+/*------------------ other op ------------------*/
+svg:not(:root) {
+    overflow: hidden;
+}
+ul.unstyled, ol.unstyled {
+    list-style: outside none none;
+    margin: 0;
+}
+ul.inline, ol.inline {
+    list-style: outside none none;
+    margin-left: 0;
+}
+/*------------------ other ed ------------------*/
+
+
+
+
+
+

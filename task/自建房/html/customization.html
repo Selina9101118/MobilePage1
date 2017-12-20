@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="../css/customization.css"/>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/customization.js"></script>
+    <title>立即定制</title>
+</head>
+<body>
+<div class="header">
+    <ul class="header-ul">
+        <li class="header-li-left">
+            <a href="javascript:history.go(-1)">
+                <img class="header-go-back" src="../image/return-icon.png"/>
+            </a>
+        </li>
+        <li class="header-li-title">
+            <div class="header-li-title-font">立即定制</div>
+        </li>
+        <li class="header-li-right">
+        </li>
+    </ul>
+</div>
+<div class="body-main">
+    <div class="body-main-mess">
+        <form action="#">
+            <ul>
+                <li class="body-main-mess-inp">
+                    <font color="red">*</font><input type="text" placeholder="联系电话">
+                </li>
+                <li class="body-main-mess-inp">
+                    <font color="red">*</font><input type="text" placeholder="联系QQ">
+                </li>
+                <li  class="body-main-mess-ch">
+                    <font color="red">*</font>
+                    <div class="body-main-mess-title">选择建筑楼层（单选）</div>
+                    <ul class="body-main-mess-ch-ul">
+                        <li class="clicked body-main-mess-ch-ul-li">
+                            一层
+                        </li>
+                        <li class="body-main-mess-ch-ul-li">
+                            二层
+                        </li>
+                        <li class="body-main-mess-ch-ul-li">
+                            三层及以上
+                        </li>
+                    </ul>
+                </li>
+                <li  class="body-main-mess-ch body-main-mess-ch1">
+                    <font color="red">*</font>
+                    <div class="body-main-mess-title">图纸类型（单选）</div>
+                    <ul class="body-main-mess-ch-ul">
+                        <li class="clicked body-main-mess-ch-ul-li">
+                            平面布局图
+                        </li>
+                        <li class="body-main-mess-ch-ul-li">
+                            立面图
+                        </li>
+                        <li class="body-main-mess-ch-ul-li">
+                            效果图
+                        </li>
+                        <li class="body-main-mess-ch-left body-main-mess-ch-ul-li">
+                            施工图
+                        </li>
+                        <li class="body-main-mess-ch-ul-li">
+                            全套图纸
+                        </li>
+                    </ul>
+                </li>
+                <li class="mess-submit">
+                    <input type="submit" class="mess-submit-button" value="提交"/>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+</div>
+<!-- 提示遮挡层-->
+<div class="prompt-barrier"></div>
+<!-- 失败提示
+    显示：
+        $('.prompt-barrier').show();$('.failure-prompt-message').show();
+-->
+<div class="prompt-message failure-prompt-message">
+    <div class="prompt-message-close">
+        <img class="prompt-message-close-icon" src="../image/cloes.png"/>
+    </div>
+    <div class="prompt-message-icon">
+        <img src="../image/failure.png" width="60px">
+    </div>
+    <div class="prompt-message-font">提交失败</div>
+    <div class="prompt-message-text">
+        请稍后再试
+    </div>
+</div>
+<!-- 成功
+    显示：
+        $('.prompt-barrier').show();$('.success-prompt-message').show();
+-->
+<div class="prompt-message success-prompt-message">
+    <div class="prompt-message-close">
+        <img class="prompt-message-close-icon" src="../image/cloes.png"/>
+    </div>
+    <div class="prompt-message-icon">
+        <img src="../image/success.png" width="60px">
+    </div>
+    <div class="prompt-message-font">提交成功</div>
+    <div class="prompt-message-text">
+        设计顾问会在稍后给您致电，请耐心等待。若无操作，10秒后将自动跳转至上一页
+    </div>
+</div>
+</body>
+</html>

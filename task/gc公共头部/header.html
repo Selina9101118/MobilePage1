@@ -1,0 +1,131 @@
+<div id="movieDiv" style="position:fixed; top:35%; left:50%; margin-left:-300px; z-index: 999999;display: none;">
+    <object  class id="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  style="float: left;" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="600" height="400">
+        <param name="movie" value="http://www.bajiegc.com/static/bajie/movie/flvplayer.swf">
+        <param name="quality" value="high">
+        <param name="allowFullScreen" value="true">
+        <param name="FlashVars" value="vcastr_file=http://www.bajiegc.com/static/bajie/movie/zbj.flv&LogoText=一分钟了解.'八戒工程'&BufferTime=3&IsAutoPlay=1">
+        <embed src="http://www.bajiegc.com/static/bajie/movie/flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=http://www.bajiegc.com/static/bajie/movie/zbj.flv&LogoText=一分钟了解'八戒工程'&IsAutoPlay=1" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="600" height="400"></embed>
+    </object>
+    <div id="closeMovieDiv" style="cursor:pointer;z-index: 999999;background-color: black;color: white;float:left;height: 31px;width:30px;display: inline-block;">
+        <img  src="{$cfg['static']}/www/anli/images/close_icon.png"></img>
+    </div>
+</div>
+<div id="firstMovieDiv"  style="width:50%;height:50%;position:fixed; top:35%; left:50%; margin-left:-300px; z-index: 999999;display: none;">
+    <iframe id="movieIframe" style="width: 600px;height: 400px; " src=""  frameborder=1></iframe>        
+    <div id="theCloseMovieDiv" style="cursor:pointer;position:absolute; top:0px; left:605px; z-index: 99999999;background-color: black;color: white;height: 31px;">
+        <img  src="{$cfg['static']}/www/anli/images/close_icon.png"></img>
+    </div>
+</div>
+<!--导航end--> 
+<!--搜索 开始-->
+<!--<div class="main clearfix" style="margin-top:28px;">-->
+<style>.ui-header-search .search-query{padding:7px 6px 7px 10px;}</style>
+    <div class="dah_up">
+    <div class="main clearfix">
+        <div class="f_l mt_22">
+            <div style="width:430px; position: relative;">
+                <a href="http://gc.zbj.com/"><img src="{$cfg['static']}/www/anli/images/logo-gc.png" /></a>
+                <a style="position: absolute; right:90px; cursor: pointer;" onclick="showMovie();">
+                    <img src="{$cfg['static']}/www/anli/images/about-us.gif">
+                </a>
+            </div>
+        </div>
+        <div class=" f_r mr_50 mt_26 po_r">
+            <div id="header-search" class="ui-header-search">
+                <form class="ui-form-search f_l" action="http://search.zbj.com/p/" target="_blank">
+                    <div style="position: relative;" class="input-append">
+                        <input type="text" class="search-query" value="" name="kw"  placeholder="点击搜索设计机构." >
+                        <button class="ui-btn ui-btn-inverse yahei z_n_ss" type="submit">搜索.</button>
+                    </div>
+                    <input type="hidden" id="j-header-search-type" name="type">
+                </form>
+                <div class="ui-rse  ui_down need_issue " type="submit">
+                    <a class="ui_down-hd">发布需求 <b><i class="iconfont icon-font"></i></b></a>
+                    <div class="need_yc">
+                        <div class="need_yc_nei">
+                            <div class="need_yc_n">
+                                <p class="need_yc_a">发布你的需求，坐等服务商上门</p>
+                                <form id="myForm">
+                                    <input type="hidden" value="demand" name="action">
+                                    <input type="hidden" value="telephone" name="linkway" id="linkway">
+                                    <textarea class="need_yc-tab_a" placeholder="请输入您想要的设计内容..." id="content" name="content"></textarea>
+                                    <div class="clearfix">
+                                        <div class="r_telephone">
+                                            <input type="text" placeholder="请输入您的姓名" value="" name="name" class="need_name">
+                                            <span class="sel-sex">
+                                                <input type="radio" checked="" name="sex" value="1">  先生&nbsp;&nbsp;
+                                                <input type="radio" name="sex" value="2">  女士
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="r_left1">
+                                            <div class="r_left1_1 changetxt">
+                                                <a data="email" href="javascript:;">邮箱</a>
+                                                <a data="telephone" href="javascript:;">电话</a>
+                                                <a data="qq" href="javascript:;">QQ</a>
+                                            </div>
+                                            <div id="showtxt" >电话&nbsp;<img src="{$cfg['static']}/www/anli/images/xia.png"></div>
+                                        </div>
+                                        <div class="r_left2"><input type="text" placeholder="请留下您的联系方式" id="link" name="link"></div>
+                                    </div>
+
+                                    <a class="submit-now subBtn" href="javascript:;">立即发布需求</a>
+
+                                    <div class="iss-bz-lists clearfix">
+                                        <img class="iss-pic" src="{$cfg['static']}/www/anli/images/issue-tb-01.gif">
+                                        <p class="issue-bz">
+                                            需求发布后
+                                            <span>1小时内收到服务商响应</span>
+                                        </p>
+                                    </div>
+                                    <div class="iss-bz-lists clearfix">
+                                        <img class="iss-pic" src="{$cfg['static']}/www/anli/images/issue-tb-02.gif">
+                                        <p class="issue-bz">
+                                            每个需求
+                                            <span>平均有10个服务商参与</span>
+                                        </p>
+                                    </div>
+                                    <div class="iss-bz-lists clearfix">
+                                        <img class="iss-pic" src="{$cfg['static']}/www/anli/images/issue-tb-03.gif">
+                                        <p class="issue-bz">
+                                            95%以上的需求
+                                            <span>得到了圆满解决</span>
+                                        </p>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="sous_tw">          
+                    {get sql="select title,url from sys_shard_data where shardid=23 order by listorder asc,id desc" rows="8"}
+                    <a href="{$g['url']}" target="_blank">{$g['title']}</a>
+                    {/get}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--搜索 结束-->
+    <!--导航开始-->
+    <div class="header_dh">
+        <div class="header_nav">
+            <ul class="clearfix">
+                <li><a href="http://gc.zbj.com/" >首页</a></li>
+                <li><a href="http://www.zbj.com/jzsj/p.html" target="_blank">找设计师</a></li>
+                <li><a href="http://gc.zbj.com/task/" target="_blank">任务大厅</a></li>
+                <!--<li><a href="http://gc.zbj.com/success/" target="_blank">历史成交</a></li>-->
+                <li><a href="http://anli.bajiegc.com/" target="_blank"  class="over">成功案例</a></li>
+                <li><a href="http://yingxiao.bajiegc.com/zhuanti/bim-package.html" target="_blank">新媒体营销</a></li>
+                <li><a href="http://gc.zbj.com/zhuanjia/">专家库</a></li> 
+                <li><a href="http://gc.zbj.com/dakehu/" target="_blank">大客户专区</a></li>
+                <li><a href="http://zuku.bajiegc.com/index.html" target="_blank">3D建材馆</a></li>   
+                <li><a href="http://www.bajiegc.com/bim/demand/main">BIM专区</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <!--导航结束-->
+

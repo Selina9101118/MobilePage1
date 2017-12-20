@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 公共样式 OP -->
+    <link rel="stylesheet" type="text/css" href="http://gc.zbj.com/static/gongcheng/index/css/basic/reset.css?r=1469192664" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../../basic/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../basic/common.css" />-->
+    <!-- 公共样式 ED -->
+    <!-- head & top OP -->
+    <link rel="stylesheet" type="text/css" href="css/global_b.css" />
+    <link rel="stylesheet" type="text/css" href="css/foot.css" />
+    <!-- head & top ED -->
+    <!-- 下拉框 css OP -->
+    <link rel="stylesheet" type="text/css" href="css/selectpick.css"/>
+    <!-- 下拉框 css ED -->
+
+
+    <!-- 百度cdn OP -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- 百度cdn ED -->
+    <!-- head & top OP -->
+    <script type="text/javascript" src="js/head_need.js"></script>
+    <!-- head & top ED -->
+    <!-- 下拉框 js ED -->
+    <script type="text/javascript" src="js/selectpick.js"></script>
+    <!-- 下拉框 js ED -->
+
+    <!-- 中间 js,cs OP -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <script src="js/responsiveslides.min.js"></script>
+    <!-- 中间 js,cs ED -->
+</head>
+<body>
+<!--导航-->
+<div id="movieDiv" class="hide" style="position:fixed; top:35%; left:50%; margin-left:-300px; z-index: 999999;display: none;">
+    <object  class id="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  style="float: left;" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="600" height="400">
+        <param name="movie" value="http://www.bajiegc.com/static/bajie/movie/flvplayer.swf">
+        <param name="quality" value="high">
+        <param name="allowFullScreen" value="true">
+        <param name="FlashVars" value="vcastr_file=http://www.bajiegc.com/static/bajie/movie/zbj.flv&LogoText=一分钟了解'八戒工程'&BufferTime=3&IsAutoPlay=1">
+        <embed src="http://www.bajiegc.com/static/bajie/movie/flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=http://www.bajiegc.com/static/bajie/movie/zbj.flv&LogoText=一分钟了解'八戒工程'&IsAutoPlay=1" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="600" height="400"></embed>
+    </object>
+    <div id="closeMovieDiv" style="cursor:pointer;z-index: 999999;background-color: black;color: white;float:left;height: 31px;width:30px;display: inline-block;">
+        <img  src="http://gc.zbj.com/static/gongcheng/images/close_icon.png"/>
+    </div>
+</div>
+<!--顶部导航 开始-->
+<!--[if lte IE 7]>
+<div class="ui-tips ui-tips-warning ie-update zbj-tips text-center">
+    你正在使用IE低级浏览器，为了您的猪八戒账号安全和更好的产品体验，<br />强烈建议您立即 <a class="blue" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank">升级IE浏览器</a> 或者用更快更安全的 <a class="blue" href="https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8" target="_blank">谷歌浏览器Chrome</a> 。
+</div>
+<![endif]-->
+<div data-virtualid="1000" class="ui-header header ibj-header  " style="width:100%;position: fixed;top: 0;" id="j-zbj-header" data-fixed="true" data-tips="true">
+
+    <div style="position: sticky; top: 0px;" class="ui-header-top clearfix" id="j-header-top">
+        <div class="grid zbj-grid">
+            <div class="fl ui-header-greet">
+                <div class="ui-dropdown">
+                    <a data-linkid="topbar-app" data-process="1" class="ui-dropdown-hd mobiphone" id="j-mobiphone" target="_blank" href="http://app.zbj.com"><i class="iconfont icon-font highlight"></i> 手机版</a>
+                    <div class="ui-dropdown-menu j_cms_ctn" data-cmstoken="mobile/d40e9ccd2abab0c4"><!--<h4>客户端首次下单，<span class="f-oringe">送5元</span></h4>-->
+                        <div class="app-download clearfix">
+                            <div class="img"><img src="http://cms.zbjimg.com/mobile/others/erweima1.png" alt=""></div>
+                            <div class="text">
+                                <p>猪八戒客户端</p>
+                                <p><a data-linkid="topbar-app-ios" data-process="1" rel="nofollow" href="https://itunes.apple.com/cn/app/zhu-ba-jie-wei-ke-gai-bian/id597101749?ls=1&amp;mt=8" target="_blank"><img src="https://login.zbj.com/cms/mobile/others/ios.png" alt="iOS"></a></p>
+                                <p><a data-linkid="topbar-app-android" data-process="1" rel="nofollow" href="http://cms.zbjimg.com/zbjmobile/appzhubajie/zhubajie_bz.apk"><img src="https://login.zbj.com/cms/mobile/others/an.png" alt="Android"></a></p>
+                            </div>
+                        </div></div>
+                </div>
+                <span class="split">|</span>
+                <a data-linkid="topbar-int" data-process="1" rel="nofollow" href="http://int.zbj.com/" target="_blank">国际猪八戒</a>
+            </div>
+            <div class="fr ui-header-nav">
+                <span id="J-header-logic3" class="item-userinfo">
+                    <a href="http://www.zbj.com/" target="_blank"><i class="highlight iconfont icon-font"></i> 猪八戒首页</a>
+                    <span class="split">|</span>
+                    <div class="ui-dropdown">
+                        <a data-linkid="topbar-login" rel="nofollow" data-process="1" href="https://login.zbj.com/login" class="ui-dropdown-hd item-login">登录 <b><i class="iconfont icon-font"></i></b></a>
+                        <ul class="unstyled hezuo-login ui-dropdown-menu">
+                            <li><a data-linkid="topbar-login-zbj" rel="nofollow" data-process="1" href="https://login.zbj.com/login" class="zhubajie">猪八戒账号登录</a></li>
+                            <li><a data-linkid="topbar-login-tb" rel="nofollow" data-process="1" href="https://login.zbj.com/oauth/redirect/act/taobao" class="taob" title="使用淘宝账号登录">淘宝账号登录</a></li>
+                            <li><a data-linkid="topbar-login-wb" rel="nofollow" data-process="1" href="https://login.zbj.com/oauth/redirect/act/sina" class="xinL" title="使用新浪微博账号登录">新浪微博账号登录</a></li>
+                            <li><a data-linkid="topbar-login-qq" rel="nofollow" data-process="1" href="https://login.zbj.com/oauth/redirect/act/QQ" class="qq" title="使用QQ账号登录">QQ账号登录</a></li>
+                        </ul>
+                    </div>
+                    <span class="split">|</span>
+                    <a data-linkid="topbar-reg" rel="nofollow" data-process="1" target="_blank" href="https://login.zbj.com/register" class="item-regx">免费注册</a>
+                </span>
+                <span class="split">|</span>
+                <a data-linkid="topbar-u-order" data-process="1" rel="nofollow" target="_blank" href="http://u.zbj.com/task/order">我的订单</a>
+                <span class="split">|</span>
+                <div class="ui-dropdown">
+                    <a data-linkid="topbar-u-me" data-process="1" rel="nofollow" href="http://u.zbj.com" class="ui-dropdown-hd">我是雇主 <b><i class="iconfont icon-font"></i></b></a>
+                    <ul class="unstyled fr ui-dropdown-menu ui-menu-fix">
+                        <li><a data-linkid="topbar-u-find" data-process="1" target="_blank" href="http://home.zbj.com/">找服务商</a></li>
+                        <li><a data-linkid="topbar-u-release" data-process="1" rel="nofollow" target="_blank" href="http://task.zbj.com/pub/step1">发布需求</a></li>
+                    </ul>
+                </div>
+                <span class="split">|</span>
+                <span id="j-work-status">
+                </span>
+                <div class="ui-dropdown" id="j-need-invite">
+                    <a data-linkid="topbar-u-seller" data-process="1" rel="nofollow" href="http://u.zbj.com/seller/" class="ui-dropdown-hd">我是服务商 <b><i class="iconfont icon-font"></i></b></a>
+                    <ul class="unstyled fr ui-dropdown-menu ui-menu-fix">
+                        <li><a data-linkid="topbar-u-orderctr" data-process="1" rel="nofollow" href="http://u.zbj.com/task/seller" target="_blank">交易管理</a></li>
+                        <li><a data-linkid="topbar-u-wikeyentrance" data-process="1" class="j-zbj-shop-entry" rel="nofollow" href="http://u.zbj.com/witkey/index" target="_blank">免费开店</a></li>
+                        <li><a data-linkid="topbar-u-task" data-process="1" target="_blank" href="http://task.zbj.com/xuqiu/" class="highlight">投标赚钱</a></li>
+                        <li><a data-linkid="topbar-fws" data-process="1" rel="nofollow" target="_blank" href="http://edu.zbj.com/">猪八戒大学</a></li>
+                        <li><a data-linkid="topbar-qyfws" data-process="1" rel="nofollow" target="_blank" href="http://www.zbj.com/vipold/index/">签约服务商</a></li>
+                        <li><a data-linkid="topbar-bjtgt" data-process="1" rel="nofollow" target="_blank" href="http://tgt.zbj.com/">八戒推广通</a></li>
+                    </ul>
+                </div>
+                <span class="split">|</span>
+                <a data-linkid="topbar-u-follow" data-process="1" rel="nofollow" href="http://u.zbj.com/fav/follow?iden=buyer&_t=1397472922605" target="_blank">我的收藏</a>
+                <span class="split">|</span>
+                <a data-linkid="topbar-contact" data-process="1" rel="nofollow" href="http://help.zbj.com/main/service" target="_blank">联系客服</a>
+                <span class="split">|</span>
+                <div class="ui-dropdown ui-dropdown-multi">
+                    <a data-linkid="topbar-nav" data-process="1" rel="nofollow" href="#none" class="ui-dropdown-hd">网站导航 <b><i class="iconfont icon-font"></i></b></a>
+                    <ul class="unstyled fr ui-dropdown-menu ui-menu-sitemap" style="width: 1100px;">
+                        <li class="map-01">
+                            <strong class="map-tit">基础服务</strong>
+                            <div class="map-lnk">
+                                <!--暂时关闭优选-->
+                                <!-- <a data-linkid="topbar-youxuan" data-process="1" rel="nofollow" target="_blank" href="http://youxuan.zbj.com/" class="highlight">优选商城</a> -->
+                                <a href="http://home.zbj.com" target="_blank">服务商库</a>
+                                <a href="http://task.zbj.com" target="_blank">需求大厅</a>
+                                <a href="http://task.zbj.com/success/" target="_blank">案例库</a>
+                            </div>
+                        </li>
+                        <li class="map-02">
+                            <strong class="map-tit">行业市场</strong>
+                            <div class="map-lnk">
+
+                                <a href="http://www.zbj.com/logo/" target="_blank">Logo设计</a>
+
+                                <a href="http://www.zbj.com/xcpsj/" target="_blank">宣传品设计</a>
+
+                                <a href="http://www.zbj.com/uisheji/" target="_blank">UI设计</a>
+
+                                <a href="http://www.zbj.com/wzkf/" target="_blank">网站开发</a>
+
+                                <a href="http://www.zbj.com/ydyykf/" target="_blank">APP开发</a>
+
+                                <a href="http://www.zbj.com/rjkf/" target="_blank">软件开发</a>
+
+                                <a href="http://www.zbj.com/tuiguang/" target="_blank">营销推广</a>
+
+                                <a href="http://www.zbj.com/xiezuo/" target="_blank">文案策划</a>
+
+                                <a href="http://www.zbj.com/wdtg/" target="_blank">网店服务</a>
+
+                                <a href="http://www.zbj.com/cpwgsj/" target="_blank">产品设计</a>
+
+                                <a href="http://www.zbj.com/dhsj/" target="_blank">动画影音</a>
+
+                                <a href="http://gc.zbj.com/" target="_blank">建筑工程</a>
+                            </div>
+                        </li>
+                        <li class="map-03">
+                            <strong class="map-tit">特色市场</strong>
+                            <div class="map-lnk">
+                                <a class="highlight" href="http://shang.zbj.com" target="_blank">八戒悬赏<i></i></a>
+                                <a class="highlight" href="http://bang.zbj.com" target="_blank">八戒众帮<i></i></a>
+                                <!--<a target="_blank" href="http://www.bajiejianzhi.com">八戒兼职</a>-->
+                                <!-- <a target="_blank" href="http://dj.zbj.com/">八戒到家</a> -->
+                                <a href="http://sj.zbj.com/?fr=2015" target="_blank">素材市集</a>
+                                <a data-linkid="10005501" class="highlight" href="http://shangbiao.witmart.com/?utm_source=ZBJ&amp;utm_medium=DINGBUDAOHANG&amp;utm_campaign=YBJ" target="_blank">国际商标注册<i></i></a>
+                                <a class="align-position" href="http://dakehu.zbj.com/" target="_blank">大赛</a>
+                                <a data-linkid="10006546" class="highlight" href="http://gszc.zbj.com/?zqz_dh=1" target="_blank">开办公司<i></i></a>
+                                <div class="clearfix"></div>
+                                <a href="http://ipr.zbj.com/?_union_uid=7223946&amp;_union_itemid=136888" target="_blank" class="img">
+
+                                    <img alt="猪标局" href="http://www.zhubiaoju.com/" src="http://cms.zbjimg.com/zscq.png">
+                                </a>
+                                <a href="http://www.tianpeng.com/?hmsr=zbj&amp;hmmd=icon&amp;hmpl=navigation&amp;hmkw=&amp;hmci=" target="_blank" class="img">
+                                    <img alt="天蓬网" href="http://www.tianpeng.com/?hmsr=zbj&amp;hmmd=icon&amp;hmpl=navigation&amp;hmkw=&amp;hmci=" src="http://cms.zbjimg.com/tpw.png">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="map-04">
+                            <strong class="map-tit">卖家服务</strong>
+                            <div class="map-lnk">
+                                <a href="http://edu.zbj.com/" target="_blank">八戒商学院</a>
+                                <a href="http://u.zbj.com/shangjindai/index" target="_blank">赏金贷</a>
+                                <a href="http://u.zbj.com/bajiedata" target="_blank">八戒数据</a>
+                                <a href="http://u.zbj.com/statistics/index?_t=1451357440922" target="_blank">八戒CRM</a>
+                                <a href="http://app.zbj.com/wk/" target="_blank">抢单宝APP</a>
+                                <a href="http://u.zbj.com/shop/editIndex" target="_blank">八戒旺铺</a>
+                                <a href="http://tgt.zbj.com/" target="_blank">八戒推广通</a>
+                                <a href="http://www.zbj.com/vip/index/" target="_blank">八戒通</a>
+                                <a href="http://edu.zbj.com/university/ArticleList?cid=1267" data-linkid="10011196" target="_blank">八戒评测</a>
+                                <a href="http://zt.zbj.com/bgl/2015-10-27/jingzhuntoufang3.html" target="_blank">区域广告位</a>
+                            </div>
+                        </li>
+                        <li class="map-05">
+                            <strong class="map-tit">八戒资讯</strong>
+                            <div class="map-lnk">
+                                <a href="http://chuangzao.zbj.com/" target="_blank">八戒创造</a>
+                                <a href="http://gushi.zbj.com/weike/" target="_blank">威客故事</a>
+                                <a href="http://gushi.zbj.com/guzhu/" target="_blank">雇主故事</a>
+                                <a href="http://gl.zbj.com/" target="_blank">八戒攻略</a>
+                                <a href="http://quanzi.zbj.com/" target="_blank">八戒圈子</a>
+                                <a href="http://news.zbj.com/" target="_blank">八戒动态</a>
+                            </div>
+                        </li>
+                        <li class="map-06">
+                            <strong class="map-tit">交易保障</strong>
+                            <div class="map-lnk">
+                                <a href="http://www.zbj.com/fuwubao/index" target="_blank">服务宝</a>
+                                <a href="http://chengxin.zbj.com" target="_blank">诚信管理中心</a>
+                                <a href="http://help.zbj.com/" target="_blank">帮助中心</a>
+                                <a href="http://edu.zbj.com/university/ArticleList?cid=1267" data-linkid="10011198" target="_blank">八戒评测</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <span class="split">|</span>
+                <a class="m_r27" href="http://www.bajiegc.com/bim/demand/main" target="_blank">BIM专区</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--logo 滑动 开始-->
+<div class="sj_logo_p" style="display: none;">
+    <div class="sj_w clearfix">
+        <div class="logo_p_l"><a href="http://gc.zbj.com/"><img src="http://gc.zbj.com/static/gongcheng/images/logo-gc-s.png" height="34" /></a></div>
+        <!--<div class="logo_p_z">天下工程师为您所用</div>-->
+        <div class=" f_r mr_50 po_r">
+            <div id="top-search" class="ui-header-search">
+                <form class="ui-form-search f_l" action="http://search.zbj.com/s/" target="_blank">
+                    <div style="position: relative;" class="input-append">
+                        <div class="selectServe" id="selectServeTop">
+                            <select id="topSelect">
+                                <option value="s">找服务</option>
+                                <option value="p">找服务商</option>
+                                <option value="t">找需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="search-query" value="" name="kw"  placeholder="点击搜索设计机构" >
+                        <button class="ui-btn ui-btn-inverse yahei z_n_ss" type="submit">搜索</button>
+                    </div>
+                    <input type="hidden" id="j-header-search-type-top" name="type">
+                </form>
+                <div class="ui-rse  ui_down need_issue " type="submit" id="top_need">
+                    <a class="ui_down-hd">发布需求 <b><i class="iconfont icon-font"></i></b></a>
+                    <div class="need_yc" id="top_ned_ned">
+                        <div class="need_yc_nei">
+                            <div class="need_yc_n">
+                                <p class="need_yc_a">发布你的需求，坐等服务商上门</p>
+                                <form id="myForm-top">
+                                    <input type="hidden" value="demand" name="action">
+                                    <input type="hidden" value="telephone" name="linkway" id="linkwayTop">
+                                    <textarea class="need_yc-tab_a" placeholder="请输入您想要的设计内容..." id="contentTop" name="content"></textarea>
+                                    <div class="clearfix">
+                                        <div class="r_telephone">
+                                            <input type="text" placeholder="请输入您的姓名" value="" name="name" class="need_name">
+                                            <span class="sel-sex">
+                                                <input type="radio" checked="" name="sex" value="1">  先生&nbsp;&nbsp;
+                                                <input type="radio" name="sex" value="2">  女士
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="r_left1">
+                                            <div class="r_left1_1 changetxt changetxt_b">
+                                                <a data="email" href="javascript:;">邮箱</a>
+                                                <a data="telephone" href="javascript:;">电话</a>
+                                                <a data="qq" href="javascript:;">QQ</a>
+                                            </div>
+                                            <div id="showtxtTop" class="showtxt_b" >电话&nbsp;<img src="http://gc.zbj.com/static/gongcheng/images/xia.png"></div>
+                                        </div>
+                                        <div class="r_left2"><input type="text" placeholder="请留下您的联系方式" id="linkTop" name="link"></div>
+                                    </div>
+
+                                    <a class="submit-now subBtn" href="javascript:;">立即发布需求</a>
+
+                                    <div class="iss-bz-lists clearfix">
+                                        <img class="iss-pic" src="http://gc.zbj.com/static/gongcheng/images/issue-tb-01.gif">
+                                        <p class="issue-bz">
+                                            需求发布后
+                                            <span>1小时内收到服务商响应</span>
+                                        </p>
+                                    </div>
+                                    <div class="iss-bz-lists clearfix">
+                                        <img class="iss-pic" src="http://gc.zbj.com/static/gongcheng/images/issue-tb-02.gif">
+                                        <p class="issue-bz">
+                                            每个需求
+                                            <span>平均有10个服务商参与</span>
+                                        </p>
+                                    </div>
+                                    <div class="iss-bz-lists clearfix">
+                                        <img class="iss-pic" src="http://gc.zbj.com/static/gongcheng/images/issue-tb-03.gif">
+                                        <p class="issue-bz">
+                                            95%以上的需求
+                                            <span>得到了圆满解决</span>
+                                        </p>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--logo 滑动over-->
+<!--搜索 开始-->
+<div class="main clearfix" style="margin-top:34px;">
+    <div class="dah_up">
+        <!--<div class="f_l mt_22">-->
+        <div class="f_l">
+            <div style="width:430px; position: relative;margin-top: 20px;">
+                <a href="http://gc.zbj.com/"><img src="./images/logo-gc-pc.gif" /></a>
+                <a style="cursor: pointer; position: fixed; left: 50%; margin-left: 585px; top: 200px;" onclick="showMovie();">
+                    <img src="http://gc.zbj.com/static/gongcheng/images/show-movie.gif">
+                </a>
+            </div>
+        </div>
+        <div class=" f_r mt_26 po_r">
+            <div id="header-search" class="ui-header-search">
+                <form class="ui-form-search f_l" action="http://search.zbj.com/s/" target="_blank">
+                    <div style="position: relative;" class="input-append">
+                        <div class="selectServe" id="selectServeHead">
+                            <select id="headSelect">
+                                <option value="s">找服务</option>
+                                <option value="p">找服务商</option>
+                                <option value="t">找需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="search-query" value="" name="kw"  placeholder="点击搜索设计机构" >
+                        <button class="ui-btn ui-btn-inverse yahei z_n_ss" type="submit">搜索</button>
+                    </div>
+                    <input type="hidden" id="j-header-search-type" name="type">
+                </form>
+                <div class="ui-rse  ui_down need_issue " type="submit" id="head_need"> <a class="ui_down-hd">发布需求 <b><i class="iconfont icon-font"></i></b></a>
+                    <div class="need_yc" id="head_ned_ned">
+                        <div class="need_yc_nei">
+                            <div class="need_yc_n">
+                                <p class="need_yc_a">发布你的需求，坐等服务商上门</p>
+                                <form id="myForm">
+                                    <input type="hidden" value="demand" name="action">
+                                    <input type="hidden" value="telephone" name="linkway" id="linkway">
+                                    <textarea class="need_yc-tab_a" placeholder="请输入您想要的设计内容..." id="content" name="content"></textarea>
+                                    <div class="clearfix">
+                                        <div class="r_telephone">
+                                            <input type="text" placeholder="请输入您的姓名" value="" name="name" class="need_name">
+                                            <span class="sel-sex">
+                                                <input type="radio" checked="" name="sex" value="1">
+                                                先生&nbsp;&nbsp;
+                                                <input type="radio" name="sex" value="2">
+                                                女士 </span> </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="r_left1">
+                                            <div class="r_left1_1 changetxt changetxt_a"> <a data="email" href="javascript:;">邮箱</a> <a data="telephone" href="javascript:;">电话</a> <a data="qq" href="javascript:;">QQ</a> </div>
+                                            <div id="showtxt" class="showtxt_a" >电话&nbsp;<img src="http://gc.zbj.com/static/gongcheng/images/xia.png"></div>
+                                        </div>
+                                        <div class="r_left2">
+                                            <input type="text" placeholder="请留下您的联系方式" id="link" name="link">
+                                        </div>
+                                    </div>
+                                    <a class="submit-now subBtn" href="javascript:;">立即发布需求</a>
+                                    <div class="iss-bz-lists clearfix"> <img class="iss-pic" src="http://gc.zbj.com/static/gongcheng/images/issue-tb-01.gif">
+                                        <p class="issue-bz"> 需求发布后 <span>1小时内收到服务商响应</span> </p>
+                                    </div>
+                                    <div class="iss-bz-lists clearfix"> <img class="iss-pic" src="http://gc.zbj.com/static/gongcheng/images/issue-tb-02.gif">
+                                        <p class="issue-bz"> 每个需求 <span>平均有10个服务商参与</span> </p>
+                                    </div>
+                                    <div class="iss-bz-lists clearfix"> <img class="iss-pic" src="http://gc.zbj.com/static/gongcheng/images/issue-tb-03.gif">
+                                        <p class="issue-bz"> 95%以上的需求 <span>得到了圆满解决</span> </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sous_tw">
+                    <a href="http://render.bajiegc.com?site=gc" target="_blank">八戒云渲染</a>
+                    <a href="http://xgt.bajiegc.com/?site=gc" target="_blank">效果图</a>
+                    <a href="http://www.zbj.com/zijian/s.html" target="_blank">自建房</a>
+                    <a href="http://www.zbj.com/jzsj/s.html" target="_blank">建筑设计</a>
+                    <a href="http://www.zbj.com/jingguan/s.html" target="_blank">景观设计</a>
+                    <a href="http://www.zbj.com/ghsj/s.html" target="_blank">规划设计</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--搜索 结束-->
+
+<!--导航开始-->
+<!--<div class="header_dh" style="margin-top: 0;">-->
+    <!--<div class="header_nav">-->
+        <!--<ul class="clearfix">-->
+            <!--<li><a href="http://gc.zbj.com/" class="over">首页</a></li>-->
+            <!--<li><a href="http://www.zbj.com/gc/p.html" target="_blank">找设计师</a></li>-->
+            <!--<li><a href="http://gc.zbj.com/task/" target="_blank">任务大厅</a></li>-->
+            <!--<li><a href="http://gc.zbj.com/success/" target="_blank">历史成交</a></li>-->
+            <!--<li><a href="http://anli.bajiegc.com/zbj/" target="_blank">成功案例</a></li>-->
+            <!--<li><a href="http://yingxiao.bajiegc.com/zhuanti/bim-package.html" target="_blank">新媒体营销</a></li>-->
+            <!--<li><a href="http://gc.zbj.com/zhuanjia/" target="_blank">专家库</a></li>-->
+            <!--<li><a href="http://gc.zbj.com/dakehu/" target="_blank">大客户专区</a></li>-->
+            <!--<li><a href="http://www.bajiegc.com/bim/demand/main" target="_blank">BIM专区</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="header_dh" style="margin-top: 0;">
+    <div class="header_nav">
+        <ul class="clearfix">
+            <li style="position: relative">
+                <a class="over id" href="/" target="">	首页 </a>
+            </li>
+            <li style="position: relative">
+                <a href="http://task.zbj.com/t-gc/" target="_blank">需求大厅</a>
+            </li>
+            <li style="position: relative">
+                <a href="http://www.zbj.com/gc/p.html" target="_blank">服务商</a>
+            </li>
+            <li style="position: relative">
+                <a href="http://gc.zbj.com/expert/list.html" target="_blank">专家库</a>
+            </li>
+            <li style="position: relative">
+                <a href="http://www.zbj.com/anli/" target="_blank">成功案例</a>
+            </li>
+            <li style="position: relative">
+                <a href="http://gc.zbj.com/anli/bidding/gcxx/1" target="_blank">政府招投标</a>
+                <div class="hot-permission" style="left:22px;">
+                    <span>官方授权</span>
+                    <img class="lazy" src="images/jt.png" data-original="images/jt.png" style="display: block;">
+                </div>
+            </li>
+            <li style="position: relative">
+                <a href="http://3d.zbj.com/index.htm" target="_blank">3D材料馆</a>
+            </li>
+            <li style="position: relative">
+                <a href="http://render.bajiegc.com?site=gc" target="_blank">八戒云渲染</a>
+                <div class="hot-permission" style="left:22px;">
+                    <span>充就送</span>
+                    <img class="lazy" src="images/jt.png" data-original="images/jt.png" style="display: block;">
+                </div>
+            </li>
+            <li style="position: relative">
+                <a href="http://gc.zbj.com/xgtyh/" target="_blank">效果图制作</a>
+                <div class="hot-permission" style="left:22px;">
+                    <span>79元起</span>
+                    <img class="lazy" src="images/jt.png" data-original="images/jt.png" style="display: block;">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航结束-->
+<!--banner开始-->
+<div class="banner-dh">
+    <div class="grid">
+        <div class="main-jisuan">
+            <div class="main-jisuan-bjia">今天已经有<span>XXX</span>个业主获得了报价</div>
+            <div class="main-jisuan-items">
+                <ul class="main-jisuan-item">
+                    <li>
+                        <span>房屋长度</span>
+                        <input type="text" >
+                    </li>
+                    <li>
+                        <span>房屋宽度</span>
+                        <input type="text" >
+                    </li>
+                    <li>
+                        <span>房屋层数</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span>设计风格</span>
+                        <select>
+                            <option value="1">经济</option>
+                            <option value="2">舒适</option>
+                            <option value="3">豪华</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span>手机号码</span>
+                        <input type="text" >
+                    </li>
+                </ul>
+                <div class="fl main-jisuan-decora">
+                    <a class="trans" href="#">
+                        开始
+                        <br>
+                        计算
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner结束-->
+
+<!--计算结果开始-->
+<div class="jisuan_result">
+    <div class="jisuan_result_title">
+        您的自建房全套设计费用为：<span>58695</span>元
+    </div>
+    <div class="jisuan_result_fat">
+        <div class="jisuan_result_tit">
+            方案图
+        </div>
+        <div class="jisuan_result_type">
+            <div>
+                <span class="jisuan_result_type_l">平面布局图</span>
+                <span class="jisuan_result_type_r">6950元</span>
+            </div>
+            <div>
+                <span class="jisuan_result_type_l">外观造型图</span>
+                <span class="jisuan_result_type_r">985674元</span>
+            </div>
+        </div>
+        <div class="jisuan_result_total">小计：XXXX元</div>
+    </div>
+    <div class="jisuan_result_sgt">
+        <div class="jisuan_result_tit">
+            施工图
+        </div>
+        <div class="jisuan_result_type">
+            <div>
+                <span class="jisuan_result_type_l">建筑施工图</span>
+                <span class="jisuan_result_type_r">758623元</span>
+            </div>
+            <div>
+                <span class="jisuan_result_type_l">结构施工图</span>
+                <span class="jisuan_result_type_r">5782元</span>
+            </div>
+            <div>
+                <span class="jisuan_result_type_l">设备施工图</span>
+                <span class="jisuan_result_type_r">4512元</span>
+            </div>
+            <div>
+                <span class="jisuan_result_type_l">园林景观施工图</span>
+                <span class="jisuan_result_type_r">3695241元</span>
+            </div>
+        </div>
+        <div class="jisuan_result_total">小计：XXXX元</div>
+    </div>
+    <div class="jisuan_result_xgt">
+        <div class="jisuan_result_tit">
+            效果图
+        </div>
+        <div class="jisuan_result_type">
+            <div>
+                <span class="jisuan_result_type_l">外观设计图</span>
+                <span class="jisuan_result_type_r">7542元</span>
+            </div>
+            <div>
+                <span class="jisuan_result_type_l">室内效果图</span>
+                <span class="jisuan_result_type_r">69225444元</span>
+            </div>
+            <div>
+                <span class="jisuan_result_type_l">局部效果图</span>
+                <span class="jisuan_result_type_r">21536元</span>
+            </div>
+        </div>
+        <div class="jisuan_result_total">小计：XXXX元</div>
+    </div>
+    <div class="kf_prompt"> *报价有疑问？请致电八戒工程自建房设计师专线：023-81215704，设计师将为您解答。</div>
+    <div class="kf_prompt"> *该报价为初步估算价格，实际设计费用以实际测评为准。</div>
+</div>
+<!--计算结果结束-->
+
+<!--footer开始-->
+<div class="ui-footer" style="clear:both;">
+    <div class="ui-footer-hd clearfix">
+        <div class="grid zbj-grid">
+            <dl class="item-new">
+                <dt>新手指南</dt>
+                <dd><a data-linkid="footer-reg" rel="nofollow" target="_blank" href="https://login.zbj.com/register/">注册新用户</a></dd>
+                <dd><a data-linkid="footer-guide" rel="nofollow" target="_blank" href="http://www.zbj.com/main/guide/">雇主入门</a></dd>
+                <dd><a data-linkid="footer-fws" rel="nofollow" target="_blank" href="http://edu.zbj.com/">服务商入门</a></dd>
+                <dd><a data-linkid="footer-rule" rel="nofollow" target="_blank" href="http://chengxin.zbj.com/report/rule-g-2317">规则中心</a></dd>
+                <!--<dd><a data-linkid="footer-make" rel="nofollow" target="_blank" href="http://chuangzao.zbj.com/">猪八戒创造</a></dd>-->
+            </dl>
+            <dl class="item-buyer">
+                <dt>我是雇主</dt>
+                <dd><a data-linkid="footer-task" rel="nofollow" target="_blank" href="http://task.zbj.com/pub/?from_cid=10001">发布需求</a></dd>
+                <dd><a data-linkid="footer-home" target="_blank" href="http://home.zbj.com/">挑选服务商</a></dd>
+                <dd><a data-linkid="footer-sj" target="_blank" href="http://sj.zbj.com/">购买设计作品</a></dd>
+                <dd><a data-linkid="footer-kuaiyin" target="_blank" href="http://jyt.zbj.com/">成品印刷</a></dd>
+                <dd><a data-linkid="footer-gz-story" target="_blank" href="http://gushi.zbj.com/guzhu/">雇主故事</a></dd>
+            </dl>
+            <dl class="item-saler">
+                <dt>我是服务商</dt>
+                <dd><a data-linkid="footer-wikeyentrance" rel="nofollow" target="_blank" href="http://edu.zbj.com/">投标赚钱</a></dd>
+                <dd><a data-linkid="footer-vip" target="_blank" href="http://edu.zbj.com/">开店赚钱</a></dd>
+                <dd><a data-linkid="footer-edu" target="_blank" href="http://edu.zbj.com/">赚钱利器</a></dd>
+                <dd><a data-linkid="footer-fwszn" rel="nofollow" target="_blank" href="http://edu.zbj.com/">互动取经</a></dd>
+                <dd><a data-linkid="footer-fws-story" rel="nofollow" target="_blank" href="http://gushi.zbj.com/weike/">威客故事</a></dd>
+
+            </dl>
+            <dl class="item-safe">
+                <dt>交易保障</dt>
+                <dd><a data-linkid="footer-xiaobao" rel="nofollow" target="_blank" href="http://task.zbj.com/xiaobao/intro">猪八戒担保交易</a></dd>
+                <dd><a data-linkid="footer-chengxin" rel="nofollow" target="_blank" href="http://chengxin.zbj.com/">争议仲裁</a></dd>
+                <dd><a data-linkid="footer-gzfangpian" rel="nofollow" target="_blank" href="http://quanzi.zbj.com/main/topic-qid-5216-tid-440857">雇主防骗</a></dd>
+                <dd><a data-linkid="footer-fwsfangpian" rel="nofollow" target="_blank" href="http://quanzi.zbj.com/main/topic-qid-1134-tid-382782">服务商防骗</a></dd>
+            </dl>
+            <dl class="item-app">
+                <dt>全程保障交易安全</dt>
+                <dd>
+                    <a data-linkid="footer-newsecurity" rel="nofollow" href="http://www.zbj.com/fuwubao" target="_blank" title="放心交易">
+                        <img style="margin-top:5px;" src="http://t5.zbjimg.com/t5s/common/img/fuwubao/fwb-bottom.png" alt="放心交易">
+                    </a>
+                </dd>
+            </dl>
+            <dl class="item-contact">
+                <dt>023-61690230</dt>
+                <dd class="item-time">周一至周五9:00-20:30<br />周六、周日9:00-18:00</dd>
+                <dd class="item-chat">
+                    <a rel="nofollow" target="_blank" href="http://gc.zbj.com/sem/sq.html">
+                        <i class="ui-ico ui-ico-cs-h"></i>
+                    </a>
+                    <div class="zbj-poptip zbj-poptip-bottom zbj-bottomtip-pos">
+                        <div class="zbj-poptip-arrow zbj-bottom-arrow"><i></i></div>
+                        <div class="zbj-poptip-bd zbj-bottomtip">在线客服的工作时间为周一至周五 9:00-20:30，周六、周日9:00-18:00</div>
+                    </div>
+                </dd>
+                <dd class="item-sns">
+                    <a data-linkid="footer-wb" rel="nofollow" target="_blank" href="http://weibo.com/zhubajiewang"><i class="ui-ico ui-ico-sina"></i></a>
+                    <a data-linkid="footer-qq" rel="nofollow" target="_blank" href="http://t.qq.com/zhubajie"><i class="ui-ico ui-ico-qq"></i></a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="grid zbj-grid ui-footer-bd">
+        <div class="ui-footer-sitelink">
+            <a data-linkid="footer-about" rel="nofollow" href="http://www.zbj.com/about/index.html" target="_blank">关于我们</a><span class="split">|</span>
+            <a data-linkid="footer-contact" rel="nofollow" href="http://www.zbj.com/about/contactus.html" target="_blank">联系方式</a><span class="split">|</span>
+            <a data-linkid="footer-adhelp" rel="nofollow" href="http://zt.zbj.com/ztold/adhelp/" target="_blank">广告服务</a><span class="split">|</span>
+            <a data-linkid="footer-news" href="http://news.zbj.com" target="_blank">新闻中心</a><span class="split">|</span>
+            <a data-linkid="footer-map" href="http://www.zbj.com/main/map/" target="_blank">网站地图</a><span class="split">|</span>
+            <a data-linkid="footer-gszz" rel="nofollow" href="http://www.zbj.com/zizhi/gszz.html" target="_blank">公司资质</a><span class="split">|</span>
+            <a data-linkid="footer-join" rel="nofollow" href="http://job.zbj.com/" target="_blank">加入我们</a><span class="split">|</span>
+            <a data-linkid="footer-pay" rel="nofollow" href="http://www.zbj.com/about/payment.html" target="_blank">支付方式</a><span class="split">|</span>
+            <a data-linkid="footer-hz" rel="nofollow" href="http://zt.zbj.com/ztold/zbjhezuo/" target="_blank">我也要与猪八戒网合作</a><span class="split">|</span>
+            <a data-linkid="footer-charlist" target="_blank" href="http://search.zbj.com/charlist/index.html">热门服务</a><span class="split">|</span>
+            <a target="_blank" href="http://sec.zbj.com/">安全中心</a><span class="split">|</span>
+            <a data-linkid="footer-m" target="_blank" href="http://m.zbj.com/">猪八戒网移动版</a>
+        </div>
+        <p class="gray ui-footer-copyright">
+            Copyright 2005-2015 zbj.com 版权所有
+            <a rel="nofollow" href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备10202274-1号</a>
+            <a rel="nofollow" href="http://www.cqca.gov.cn/" target="_blank">渝B2-20080005</a>
+        </p>
+        <div class="ui-footer-gov">
+            <a href="" target="_blank"><img src="http://t5.zbjimg.com/r/page/ebs.png"><span class="item-txt">工商网监电子标识</span></a>
+            <a href="" target="_blank"><img src="http://t5.zbjimg.com/r/page/xfz.jpg"><span class="item-txt">消费者维权服务站</span></a>
+            <a href="" target="_blank"><img src="http://t5.zbjimg.com/t5s/lib/img/time_cnnic.jpg" width="128"height="47"><span class="item-txt">可信网站身份验证</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="firstMovieDiv"  style="width:50%;height:50%;position:fixed; top:35%; left:50%; margin-left:-300px; z-index: 999999;display: none;">
+    <iframe id="movieIframe" style="width: 600px;height: 400px; " src=""  frameborder=1></iframe>
+    <div id="theCloseMovieDiv" style="cursor:pointer;position:absolute; top:0px; left:600px; z-index: 99999999;background-color: black;color: white;height: 31px; width: 31px;">
+        <img  src="http://gc.zbj.com/static/gongcheng/images/close_icon.png"/>
+    </div>
+</div>
+<div class="floating">
+    <div class="floating-consult" style="margin-bottom: 35px">
+        <a href="javascript:;" onclick="showcctv()"  style="background: none; padding:0; width: 100%;">
+            <img src="http://www.bajiegc.com/static/bajie/images/floating-cctv.gif"/>
+        </a>
+    </div>
+    <div class="floating-consult">
+        <a class="to-top" style="cursor: pointer;"> <img src="http://www.bajiegc.com/resources/commcomponents/header/images/floating-top.png">
+            <p>回到顶部</p>
+        </a>
+    </div>
+</div>
+<!--footer结束-->
+
+</body>
+</html>

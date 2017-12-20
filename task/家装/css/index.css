@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*reset start*/
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none}
+html{font-size:16px}
+body{font-family:"微软雅黑",arial,sans-serif; background:#e6e6e6;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;font-style: normal;font-weight: normal;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{color:#333;outline:0;}
+body *{-webkit-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0)}
+.clearfix:after{content:".";display:block;overflow:hidden;height:0;clear:both;visibility:hidden;}
+* html .clearfix{height:1%;}
+input,textarea,select{outline: none; -webkit-appearance:none;}
+.clearOver{overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+
+body{
+    background-color: efeff4;
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    top: 188px;
+}
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 90px;
+    position: fixed;
+    background-color: #fff;
+}
+.header .header-bg{
+    width: 100%;
+    height: 88px;
+    background: url("../image/header-bg.png") repeat-x;
+    text-align: center;
+}
+.header .header-bg .header-title{
+    font-size: 37px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    height: 88px;
+    line-height: 88px;
+
+}
+.header .header-list{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+}
+.header .header-list .header-list-style{
+    width: 33.3%;
+    height: 90px;
+    text-align: center;
+    float: left;
+}
+.header .header-list .header-list-style .header-list-style-b{
+    width: 180px;
+    margin: 0 auto;
+    height: 87px;
+    text-align: center;
+}
+.header .header-list .header-submenu{
+    display: none;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #e0dfe4;
+    width: 100%;
+    overflow: auto;
+    top: 178px;
+    height: auto;
+    padding-bottom: 30px;
+}
+.header-list .header-list-style .header-submenu li{
+    float: left;
+    width: 33.3%;
+}
+.header-list .header-list-style .header-submenu li div{
+    text-align: center;
+    width: 70%;
+    margin: 30px auto 0;
+    overflow: hidden;
+    font-size: 24px;
+    line-height: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.clicked{
+    border-bottom: 3px solid #fa801d;
+}
+.header .header-list .header-list-style img{
+    margin-top: 20px;
+}
+.header .header-list .header-list-style span{
+    text-align: center;
+    font-size: 30px;
+}
+.body-main{
+    margin: 180px 0 24px;
+}
+.body-main-div{
+    box-sizing: border-box;
+    width: 50%;
+}
+.body-main-left{
+    padding-left: 20px;
+    padding-right: 10px;
+    float: left;
+}
+.body-main-right{
+    padding-left: 10px;
+    padding-right: 20px;
+    float: right;
+}
+
+.body-main .body-main-show{
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    background-color: #fff;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 1px #ccc;
+    position: relative;
+}
+.body-main-show-img{
+    /*background-color: rgb(156, 181, 212);*/
+}
+.body-main .body-main-show img{
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.body-main .body-main-show .body-main-show-font{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    line-height: 70px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #fff;
+}
+.body-main .body-main-show .body-main-show-font span{
+    font-size:30px;
+}
+

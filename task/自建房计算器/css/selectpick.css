@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+/*外面边框的样式*/
+.place-coat .selectpick_div {
+	/*padding-left: 50px;*/
+	position: static;
+	height: 45px;
+	width: 650px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 42px;
+	overflow: hidden;
+	text-align: left;
+	z-index: 20;
+}
+
+.place-coat .selectpick_icon {
+	float: right;
+	background: url(../images/bottom.png) no-repeat center;
+	margin-right: 5px;
+	cursor: pointer;
+	height: 45px;
+	width: 25px;
+}
+
+/*.place-coat .selectpick_div:hover {
+	background-color: #ffad56;
+}*/
+
+.place-coat .selectpick_div:active {
+	-moz-box-shadow: 0 0 3px #0099CC;
+	-webkit-box-shadow: 0 0 3px #0099CC;
+	box-shadow: 0 0 3px #0099CC;
+	border: solid 1px #0099CC;
+}
+/*下拉框的主体*/
+.place-coat .selectpick_options {
+	border: solid 1px #fff;
+/*	border-bottom: none;*/
+	position: absolute;
+	z-index: 20;
+	font-size: 13.5px;
+	text-align:center;
+	display:none;
+	height: 200px;
+	overflow-y: auto;
+	width: 650px;
+	top: 45px;
+}
+
+.place-coat .selectpick_options ul {
+	list-style: none;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	z-index: 20;
+	font-size: 16px;
+}
+
+.place-coat .selectpick_options ul li {
+/*	border-bottom: solid 1px #CFCFCF;*/
+/*	padding-left: 5px;*/
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 50px;
+	text-align: left;
+	font-size: 16px;
+	z-index: 20;
+	background: #ff992c;
+	border: none;
+	
+}
+.place-coat .selectpick_options li:hover{
+	background:#ffad56;
+	color:#fff;
+}
+.place-coat .selectpick_options ul li.selectpick_options_selected {
+	background:#ffad56;
+	color:#fff;
+	z-index: 20;
+}
+/*设置为disabled的时候*/
+.place-coat .selectpick_no_select {
+	cursor: default;
+	color: #9a9898;
+	background-color: #F5F5F5;
+}
+/*设置下拉框的不透明度*/
+.select_hide {
+	display:none;
+	-moz-opacity: 0;
+	opacity: 0;
+	-webkit-opacity: 0;
+	filter: alpha(opacity =0);
+}
+/*其他*/
+.place-coat .selectpick_options li{cursor:pointer;}
+.place-coat .selectpick_options li label{cursor:pointer;}
+
+.place-coat .selectpick_div_box{
+	width: 650px;
+	height: 45px;
+	background-color: #ff992c;
+	border: 1px solid #fff;
+	line-height: 45px;
+	color: #fff;
+}
+.place-coat #selectpick_span_place{
+	font-size: 16px;
+	/*color: #ffe4d0;*/
+	color: #fff;
+	padding-left: 50px;
+}
