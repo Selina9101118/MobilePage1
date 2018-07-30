@@ -1,0 +1,86 @@
+window.util =  new BglUtil();
+
+function BglUtil(){}
+
+BglUtil.prototype.Tips = function(content, type, contentTitle, callback){
+    type = type || 'success';
+    if(type == 'success'){
+        toastr.success(content, contentTitle || "操作成功");
+    }else if(type == 'error'){
+        toastr.error(content, contentTitle || "操作失败");
+    }else{
+        toastr.warning(content, contentTitle || "提醒");
+    }
+
+    if(callback){
+        setTimeout(callback, 1500);
+    }
+};
+
+BglUtil.prototype.addParamsInUrlAndRedirect = function(key, val){
+    var url = window.location.href;
+    var pureUrl = url.split('?')[0];
+    var params = window.location.search;
+    if(params){
+        if(url.match(key+'=')){
+            var paramsArr = params.split('&');
+            var newStr = '';
+            for(var i=0;i<paramsArr.length;i++){
+                if(paramsArr[i].match(key+'=')){
+                    newStr += i===paramsArr.length-1 ? key+'='+val : key+'='+val+'&';
+                }else{
+                    newStr += i===paramsArr.length-1 ? paramsArr[i] : paramsArr[i]+'&';
+                }
+            }
+            window.location.search = newStr;
+        }else{
+            window.location.search += '&'+key+'='+val;
+        }
+
+    }else{
+        window.location.search = key+'='+val;
+    }
+};
+
+BglUtil.prototype.addParamInUrlAndRedirect = function(key, val){
+    window.location.search = key+'='+val;
+};
+
+BglUtil.prototype.ajaxWithLoad = function(type, url, data, callback){
+    if(!$('.loading').length){
+        $('body').append('<div class="bgl-loading" id="loading"><p id="loadingText">请稍等, 正在处理 ...</p></div>');
+    }
+    $.ajax({
+        url: url,
+        data: data,
+        type: type,
+        success:function(json){
+            $('#loading').hide().remove();
+            if(json.success){
+                callback(json);
+            }else{
+                util.Tips(json.msg, 'error');
+            }
+        }
+    })
+};
+
+
+$('#logout').click(function(e){
+    e.preventDefault();
+    var $this = $(this);
+
+    $.get('/logout', function(data){
+        $this.after('<iframe src="'+data.logoutUrl+'" style="display: none;"></iframe>');
+        setTimeout(function(){
+            window.location.href = data.url;
+        }, 2000);
+
+    });
+
+});
+
+if(!window.chrome){
+    alert("为了完整的功能和更好的体验,请使用 Chrome 最新版浏览器!")
+}
+

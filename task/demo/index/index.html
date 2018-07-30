@@ -7,7 +7,7 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aaaa</title>
+    <title>重庆市南滨路管理委员会招商管理平台</title>
     <link href="./static/css/index.css" type="text/css" rel="stylesheet">
 
 
@@ -18,9 +18,9 @@
     </style>
 
 
-    <script src="./static/jquery-1.7.2.js.下载"></script>
-    <script src="./static/jhelper_urls.js.下载"></script>
-    <script src="./static/shhq2015_index20160919.js.下载"></script>
+    <script src="static/js/jquery-1.7.2.js"></script>
+    <script src="static/js/jhelper_urls.js"></script>
+    <script src="static/js/shhq2015_index20160919.js"></script>
 
 
     <!--工具条结束-->
@@ -29,7 +29,7 @@
         tomobileurl('index.htm')
         //})
     </script>
-    <script src="./static/share.js.下载"></script>
+    <script src="static/js/share.js"></script>
     <link rel="stylesheet" href="./static/share_style0_32.css">
 </head>
 <body onload="initJSHelperEvent();">
@@ -41,27 +41,16 @@
         <!-- 头部 start -->
         <div class="bodybackground"></div>
         <div id="header" class="h_header"><h1 id="logo"><a href="http://119.84.26.18:85/"><img
-                src="./static/logo_03.png" alt="重庆弹子石商务区"></a></h1></div>
+                src="./static/logo.png" alt="重庆市南滨路管理委员会招商管理平台"></a></h1></div>
         <div class="h_searchbox" style="height: 40px;">
 
             <div class="h_sear_left">
                 <input type="input" value="请输入搜索关键字" class="h_ipt" id="keyword"
                        onkeypress="    openSearch(event)"><input type="button" value="搜索" class="h_ict"
                                                                  onclick="    Search()"
-                                                                 onmouseover="this.style.color = &#39;#3a54a9&#39;"
-                                                                 onmouseout="this.style.color = &#39;#000000&#39;">
+                                                                 onmouseover="this.style.color = '#3a54a9'"
+                                                                 onmouseout="this.style.color = '#000000'">
                 <div class="clear"></div>
-                <!--<div class="selbtn" style="display: none;">-->
-                <!--<div id="shhq">全站检索</div>-->
-                <!--<div id="shhq_xwzx">新闻资讯</div>-->
-                <!--<div id="shhq_gkjs">概况介绍</div>-->
-                <!--<div id="shhq_qyld">区域联动</div>-->
-                <!--<div id="shhq_swqkf">规划建设</div>-->
-                <!--<div id="shhq_swfz">招商服务</div>-->
-                <!--<div id="shhq_hqsn">枢纽管理</div>-->
-                <!--<div id="shhq_xxgk">信息公开</div>-->
-                <!--<div id="shhq_xxgk_zcfg">政策法规</div>-->
-                <!--</div>-->
 
             </div>
         </div>
@@ -71,15 +60,15 @@
         <div id="main" class="h_main">
             <div class="h_menu" id="mainNav">
                 <ul>
-                    <!--<li class="current" onclick="changearea(&#39;wzsy&#39;)" onmouseover="changearea(&#39;wzsy&#39;)">网站首页</li>-->
-                    <li onclick="changearea(&#39;gkjs&#39;)" onmouseover="changearea(&#39;gkjs&#39;)" class="">概况介绍</li>
-                    <!--<li onclick="changearea(&#39;xwzx&#39;)" onmouseover="changearea(&#39;xwzx&#39;)" class="">新闻资讯</li>-->
-                    <li onclick="changearea(&#39;qyld&#39;)" onmouseover="changearea(&#39;qyld&#39;)" class="">项目信息</li>
-                    <!--<li onclick="changearea(&#39;ghjs&#39;)" onmouseover="changearea(&#39;ghjs&#39;)" class="">规划建设</li>-->
-                    <li onclick="changearea(&#39;zsfw&#39;)" onmouseover="changearea(&#39;zsfw&#39;)" class="">招商服务</li>
-                    <!--<li onclick="changearea(&#39;sngl&#39;)" onmouseover="changearea(&#39;sngl&#39;)" class="">投资指南</li>-->
-                    <!--<li onclick="changearea(&#39;xxgk&#39;)" onmouseover="changearea(&#39;xxgk&#39;)" class="">信息公开</li>-->
-                    <!--<li onclick="changearea(&#39;zcfg&#39;)" onmouseover="changearea(&#39;zcfg&#39;)" class="">政策法规</li>-->
+                    <!--<li class="current" onclick="changearea('wzsy')" onmouseover="changearea('wzsy')">网站首页</li>-->
+                    <li onclick="changearea('gkjs')" onmouseover="changearea('gkjs')" class="">概况介绍</li>
+                    <!--<li onclick="changearea('xwzx')" onmouseover="changearea('xwzx')" class="">新闻资讯</li>-->
+                    <li onclick="changearea('qyld')" onmouseover="changearea('qyld')" class="">项目信息</li>
+                    <!--<li onclick="changearea('ghjs')" onmouseover="changearea('ghjs')" class="">规划建设</li>-->
+                    <li onclick="changearea('zsfw')" onmouseover="changearea('zsfw')" class="">招商服务</li>
+                    <!--<li onclick="changearea('sngl')" onmouseover="changearea('sngl')" class="">投资指南</li>-->
+                    <!--<li onclick="changearea('xxgk')" onmouseover="changearea('xxgk')" class="">信息公开</li>-->
+                    <!--<li onclick="changearea('zcfg')" onmouseover="changearea('zcfg')" class="">政策法规</li>-->
                 </ul>
             </div>
             <!--b:网站首页-->
@@ -341,7 +330,7 @@
                 <span class="h_r_fourbox f01"><a href="http://119.84.26.18:85/#">网上办事大厅</a></span>
                 <a target="_blank" href="http://119.84.26.18:85/#"><span class="h_r_fourbox f02">专项资金申请</span></a>
                             <span class="h_r_fourbox f03">
-                                <a href="javascript:changearea(&#39;gnfw&#39;)">集中供能服务</a>
+                                <a href="javascript:changearea('gnfw')">集中供能服务</a>
                                 <!--<a href="javascript:void(0);">集中供能服务</a>-->
                             </span>
                 <span class="h_r_fourbox f04"><a href="http://119.84.26.18:85/#">会展中心信息</a></span>
@@ -714,22 +703,25 @@
     <div class="g_right" name="gkjs" style="display: block;">
         <div class="g_scroll">
             <div class="h_title02"><span class="more02"><img alt="更多" src="./static/more01.png"></span>规划建设</div>
-            <div class="h_scrollbox" nsc="1" start="1">
+            <div class="h_scrollbox">
                 <!--焦点图滚动-->
-                <ul style="margin-left: -250px;">
-                    <li style="width: 250px;"><img alt="各界关怀" src="./static/01.jpg"
+                <ul style="margin-left: 0px;">
+
+                    <li style="width: 250px;"><img alt="滨四期地块" src=" ./static/6361672410526637538913578.png"
+                                                   style="width: 250px; height: auto; left: 0px; top: -11px;"></li>
+                  <!--  <li style="width: 250px;"><img alt="各界关怀" src="./static/01.jpg"
                                                    style="width: 250px; height: auto; left: 0px; top: -11px;"></li>
                     <li style="width: 250px;"><img alt="各界关怀" src="./static/02.jpg"
                                                    style="width: auto; height: 160px; top: 0px; left: -47px;"></li>
                     <li style="width: 250px;"><img alt="各界关怀" src="./static/03.jpg"
                                                    style="width: 250px; height: auto; left: 0px; top: -2px;"></li>
                     <li style="width: 250px;"><img alt="各界关怀" src="./static/04.jpg"
-                                                   style="width: auto; height: 160px; left: -2px; top: 0px;"></li>
+                                                   style="width: auto; height: 160px; left: -2px; top: 0px;"></li>-->
                 </ul>
-                <div class="h_pre"><a href="javascript:void(0)" title="向左"><img alt="向左" src="./static/l_ll.png"></a>
-                </div>
-                <div class="h_pre1"><a href="javascript:void(0)" title="向右"><img alt="向右" src="./static/r_rr.png"></a>
-                </div>
+                <!--<div class="h_pre"><a href="javascript:void(0)" title="向左"><img alt="向左" src="./static/l_ll.png"></a>-->
+                <!--</div>-->
+                <!--<div class="h_pre1"><a href="javascript:void(0)" title="向右"><img alt="向右" src="./static/r_rr.png"></a>-->
+                <!--</div>-->
             </div>
         </div>
         <div class="g_pdf"><span class="more03"><a title="更多" href="http://119.84.26.18:85/Home/RuZhu"
@@ -1171,8 +1163,116 @@
     </style>
     <div class="q_center" name="qyld" style="display: none;">
         <div class="mh">
+            <span class="q_title01 q_titlebg01"><a href="http://119.84.26.18:85/Web/Home/List?stid=29"
+                                                   target="_blank"><span class="q_title_01"><img alt="楼宇信息"
+                                                                                                 src="./static/images/zzlzs.png" width="45px">写字楼招商</span></a></span>
+
+            <div class="j_bo_scrcot1">
+                <div class="scroll_left" id="LeftArr1"></div>
+                <div class="pic" id="scrollPic1" style="width: 810px; overflow: hidden;">
+                    <div style="overflow: hidden; zoom: 1; width: 32766px;">
+                        <div style="float: left;">
+                            <ul>
+
+                                <li><a href="http://119.84.26.18:85/Home/Article/17" title="国际马戏城" target="_blank"><img
+                                        alt="国际马戏城"
+                                        src="./static/6361481875495012693040078.png"></a><br><span>国际马戏城</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/16" title="中讯总部项目" target="_blank"><img
+                                        alt="中讯总部项目"
+                                        src="./static/6361481822883003465296162.jpg"></a><br><span>中讯总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/15" title="能投总部项目" target="_blank"><img
+                                        alt="能投总部项目"
+                                        src="./static/6361481810948520847461376.jpg"></a><br><span>能投总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/14" title="雷士总部项目" target="_blank"><img
+                                        alt="雷士总部项目"
+                                        src="./static/6361481797468749843368374.jpg"></a><br><span>雷士总部项目</span></li>
+
+
+                            </ul>
+
+                        </div>
+                        <div style="float: left;">
+                            <ul>
+
+                                <li><a href="http://119.84.26.18:85/Home/Article/17" title="国际马戏城" target="_blank"><img
+                                        alt="国际马戏城"
+                                        src="./static/6361481875495012693040078.png"></a><br><span>国际马戏城</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/16" title="中讯总部项目" target="_blank"><img
+                                        alt="中讯总部项目"
+                                        src="./static/6361481822883003465296162.jpg"></a><br><span>中讯总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/15" title="能投总部项目" target="_blank"><img
+                                        alt="能投总部项目"
+                                        src="./static/6361481810948520847461376.jpg"></a><br><span>能投总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/14" title="雷士总部项目" target="_blank"><img
+                                        alt="雷士总部项目"
+                                        src="./static/6361481797468749843368374.jpg"></a><br><span>雷士总部项目</span></li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_right" id="RightArr1"></div>
+            </div>
+        </div>
+        <div class="mh m_04">
+            <span class="q_title01 q_titlebg01"><a href="http://119.84.26.18:85/Web/Home/List?stid=29"
+                                                   target="_blank"><span class="q_title_01"><img alt="楼宇信息"
+                                                                                                 src="./static/logo03.png">商业招商</span></a></span>
+
+            <div class="j_bo_scrcot1">
+                <div class="scroll_left" id="LeftArr1"></div>
+                <div class="pic" id="scrollPic1" style="width: 810px; overflow: hidden;">
+                    <div style="overflow: hidden; zoom: 1; width: 32766px;">
+                        <div style="float: left;">
+                            <ul>
+
+                                <li><a href="http://119.84.26.18:85/Home/Article/17" title="国际马戏城" target="_blank"><img
+                                        alt="国际马戏城"
+                                        src="./static/6361481875495012693040078.png"></a><br><span>国际马戏城</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/16" title="中讯总部项目" target="_blank"><img
+                                        alt="中讯总部项目"
+                                        src="./static/6361481822883003465296162.jpg"></a><br><span>中讯总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/15" title="能投总部项目" target="_blank"><img
+                                        alt="能投总部项目"
+                                        src="./static/6361481810948520847461376.jpg"></a><br><span>能投总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/14" title="雷士总部项目" target="_blank"><img
+                                        alt="雷士总部项目"
+                                        src="./static/6361481797468749843368374.jpg"></a><br><span>雷士总部项目</span></li>
+
+
+                            </ul>
+
+                        </div>
+                        <div style="float: left;">
+                            <ul>
+
+                                <li><a href="http://119.84.26.18:85/Home/Article/17" title="国际马戏城" target="_blank"><img
+                                        alt="国际马戏城"
+                                        src="./static/6361481875495012693040078.png"></a><br><span>国际马戏城</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/16" title="中讯总部项目" target="_blank"><img
+                                        alt="中讯总部项目"
+                                        src="./static/6361481822883003465296162.jpg"></a><br><span>中讯总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/15" title="能投总部项目" target="_blank"><img
+                                        alt="能投总部项目"
+                                        src="./static/6361481810948520847461376.jpg"></a><br><span>能投总部项目</span></li>
+                                <li><a href="http://119.84.26.18:85/Home/Article/14" title="雷士总部项目" target="_blank"><img
+                                        alt="雷士总部项目"
+                                        src="./static/6361481797468749843368374.jpg"></a><br><span>雷士总部项目</span></li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_right" id="RightArr1"></div>
+            </div>
+        </div>
+        <div class="mh m_04">
             <span class="q_title01"><a href="http://119.84.26.18:85/Web/Home/List?stid=31" target="_blank"><span
-                    class="q_title_01"><img alt="招商地块" src="./static/logo01.png">招商地块</span></a></span>
+                    class="q_title_01"><img alt="土地招商" src="./static/logo01.png">土地招商</span></a></span>
 
             <div class="j_bo_scrcot1">
                 <div class="scroll_left" id="LeftArr"></div>
@@ -1224,60 +1324,6 @@
             </div>
 
 
-        </div>
-        <div class="mh m_04">
-            <span class="q_title01 q_titlebg01"><a href="http://119.84.26.18:85/Web/Home/List?stid=29"
-                                                   target="_blank"><span class="q_title_01"><img alt="楼宇信息"
-                                                                                                 src="./static/logo03.png">辖区项目信息</span></a></span>
-
-            <div class="j_bo_scrcot1">
-                <div class="scroll_left" id="LeftArr1"></div>
-                <div class="pic" id="scrollPic1" style="width: 810px; overflow: hidden;">
-                    <div style="overflow: hidden; zoom: 1; width: 32766px;">
-                        <div style="float: left;">
-                            <ul>
-
-                                <li><a href="http://119.84.26.18:85/Home/Article/17" title="国际马戏城" target="_blank"><img
-                                        alt="国际马戏城"
-                                        src="./static/6361481875495012693040078.png"></a><br><span>国际马戏城</span></li>
-                                <li><a href="http://119.84.26.18:85/Home/Article/16" title="中讯总部项目" target="_blank"><img
-                                        alt="中讯总部项目"
-                                        src="./static/6361481822883003465296162.jpg"></a><br><span>中讯总部项目</span></li>
-                                <li><a href="http://119.84.26.18:85/Home/Article/15" title="能投总部项目" target="_blank"><img
-                                        alt="能投总部项目"
-                                        src="./static/6361481810948520847461376.jpg"></a><br><span>能投总部项目</span></li>
-                                <li><a href="http://119.84.26.18:85/Home/Article/14" title="雷士总部项目" target="_blank"><img
-                                        alt="雷士总部项目"
-                                        src="./static/6361481797468749843368374.jpg"></a><br><span>雷士总部项目</span></li>
-
-
-                            </ul>
-
-                        </div>
-                        <div style="float: left;">
-                            <ul>
-
-                                <li><a href="http://119.84.26.18:85/Home/Article/17" title="国际马戏城" target="_blank"><img
-                                        alt="国际马戏城"
-                                        src="./static/6361481875495012693040078.png"></a><br><span>国际马戏城</span></li>
-                                <li><a href="http://119.84.26.18:85/Home/Article/16" title="中讯总部项目" target="_blank"><img
-                                        alt="中讯总部项目"
-                                        src="./static/6361481822883003465296162.jpg"></a><br><span>中讯总部项目</span></li>
-                                <li><a href="http://119.84.26.18:85/Home/Article/15" title="能投总部项目" target="_blank"><img
-                                        alt="能投总部项目"
-                                        src="./static/6361481810948520847461376.jpg"></a><br><span>能投总部项目</span></li>
-                                <li><a href="http://119.84.26.18:85/Home/Article/14" title="雷士总部项目" target="_blank"><img
-                                        alt="雷士总部项目"
-                                        src="./static/6361481797468749843368374.jpg"></a><br><span>雷士总部项目</span></li>
-
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll_right" id="RightArr1"></div>
-            </div>
         </div>
     </div>
     <!--中边-->
@@ -1518,9 +1564,10 @@
                 <div class="b_bus_nav_right">
                     <div class="b_bus_nav_twice">
 
-                        <span class="b_span01"><a title="企业来访登记" href="http://119.84.26.18:85/Home/RuZhu"><img
-                                alt="来访企业登记" src="./static/two_1.jpg"></a><a title="来访企业登记"
-                                                                             href="http://119.84.26.18:85/Home/RuZhu">来访企业登记</a></span>
+                        <span class="b_span01"><a title="企业来访登记" href="http://119.84.26.18:85/Home/RuZhu">
+                            <img alt="来访企业登记" src="./static/two_1.jpg" style="float: left"></a>
+                            <a title="来访企业登记" href="http://119.84.26.18:85/Home/RuZhu" style="line-height: 30px;font-size: 20px;margin-left: 40px;height: 40px;text-align: center;overflow: hidden;position: absolute;margin-top: 15px;font-family: "微软雅黑";">来访企业登记</a>
+                        </span>
                     </div>
                     <div class="b_bus_address">
                         地址/Add：重庆南岸区弹子石CBD(400000) <br>
@@ -1532,28 +1579,7 @@
         </div>
         <!--上边结束-->
         <div class="b_bus_left_bot">
-            <div class="b_bus_left_bot_ll">
-                <div class="b_bot_ll_nav">
-                    <div class="h_title02"><span class="more02"><a title="更多"
-                                                                   href="http://119.84.26.18:85/Web/Home/List?stid=38"
-                                                                   target="_blank"><img alt="更多"
-                                                                                        src="./static/pre_01.png"></a></span>招商活动
-                    </div>
-                    <div class="b_bot_ll_cot">
-                        <ul>
-                            <li><a href="http://119.84.26.18:85/Home/Article/72" title="团区委出资 助青年创业" target="_blank">团区委出资
-                                助青年创业</a></li>
-                            <li><a href="http://119.84.26.18:85/Home/Article/71" title="南岸区总工会举办第二期文体骨干培训班"
-                                   target="_blank">南岸区总工会举办第二期文体骨干培训班</a></li>
-                            <li><a href="http://119.84.26.18:85/Home/Article/46" title="重庆市质监局：着力实施标准化助推提质增效"
-                                   target="_blank">重庆市质监局：着力实施标准化助推提质增效</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="b_bus_left_bot_rr">
+            <div class="b_bus_left_bot_rr" style="width: 610px;margin: 0">
                 <div class="b_bot_ll_nav">
                     <div class="h_title02"><span class="more02"><a title="更多"
                                                                    href="http://119.84.26.18:85/Web/Home/List?stid=39"
@@ -1561,9 +1587,7 @@
                                                                                         src="./static/pre_01.png"></a></span>办事指南
                     </div>
                     <div class="b_bot_ll_cot h150">
-                        <ul>
-
-                        </ul>
+                       <img src="./static/bszl.png"> </img>
                     </div>
                 </div>
             </div>
@@ -1578,7 +1602,12 @@
                                                                                src="./static/pre_01.png"></a></span>优惠政策</span>
             <div class="b_bus_right_nav">
                 <ul>
-
+                    <li>
+                        <a href="/Home/Article/47" title="重庆市着力推进准化试点示范成效明显" target="_blank">重庆市着力推进准化试点示范成效明显</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Article/47" title="重庆市着力推进准化试点示范成效明显" target="_blank">重庆市着力推进准化试点示范成效明显</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -1591,7 +1620,12 @@
                 </div>
                 <div class="b_bot_ll_cot h160" style="font-size:13px;text-align:left">
                     <ul>
-
+                        <li>
+                            <a href="/Home/Article/47" title="重庆市着力推进准化试点示范成效明显" target="_blank">重庆市着力推进准化试点示范成效明显</a>
+                        </li>
+                        <li>
+                            <a href="/Home/Article/47" title="重庆市着力推进准化试点示范成效明显" target="_blank">重庆市着力推进准化试点示范成效明显</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>专家注册页</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1">
+    <meta name="keywords" content="在线表单,在线报表,数据搜集,数据管理,应用定制">
+    <meta name="description" content="利用在线表单和在线报表搭建数据管理应用,无需编程,注册即用">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="js/bootstrap-select/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap-select/css/bootstrap-select.css"/>
+    <link rel="stylesheet" type="text/css" href="js/mobileSelect/css/mobileSelect.css"/>
+    <link href="css/fx.mobile.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-select/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/mobileIndex.js"></script>
+    <style type="text/css">
+        .fui_trigger-input {
+            width: 100% !important;
+            height: 45px !important;
+        }
+
+        .dropdown-toggle {
+            height: 45px !important;
+        }
+
+        .dropdown-menu li a {
+            padding: 10px !important;
+        }
+    </style>
+    <script type="text/javascript">
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        } else {
+            window.location.href = "index.htm"
+        }
+    </script>
+</head>
+<body class="page-form-view">
+<div></div>
+<div class="public-thumbnail"><img src="image/form_thumbnail.png"></div>
+<div class="public-password" style="display: none;"></div>
+<div class="public-form x-form relative" wn="_widget_1532485775062">
+    <div class="widget-wrapper">
+        <ul>
+            <li class="f-line" wn="_widget_1532485775063">
+                <div class="f-label">
+                    <span class="f-title">姓名</span>
+                    <span class="f-required">*</span>
+                </div>
+                <div class="f-widget">
+                    <div class="x-text" wn="_widget_1530519603210">
+                        <input type="text x-ui-invalid" placeholder="请输入文本内容" id="specialistName">
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775064">
+                <div class="f-label">
+                    <span class="f-title">身份证号</span>
+                    <span class="f-required">*</span>
+                </div>
+                <div class="f-widget">
+                    <div class="x-number" wn="_widget_1530519603266">
+                        <input type="number" placeholder="请输入数字" id="specialistIdCard">
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775065">
+                <div class="f-label">
+                    <span class="f-title">性别</span>
+                    <span class="f-required">*</span>
+                </div>
+                <div class="f-widget">
+                    <div class="x-combo" wn="_widget_1530519603249" style="width: 100%;height: 60px">
+                        <!--<input id="sexSelectPicker" type="hidden">-->
+                        <!--<div class="x-picker-label" data-watermark="请选择内容" id="sexTrigger"></div>-->
+                        <select class="selectpicker fui_trigger-input" title="请选择" id="sexSelectPicker"
+                                style="width: 100%;height: 60px">
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775066">
+                <div class="f-label">
+                    <span class="f-title">最高学历</span>
+                    <span class="f-required">*</span>
+                </div>
+                <div class="f-widget">
+                    <div class="x-combo" wn="_widget_1530519603322">
+                        <!--<input id="xlSelectPicker" type="hidden">-->
+                        <!--<div class="x-picker-label" data-watermark="请选择内容" id="xlTrigger"></div>-->
+                        <select class="selectpicker fui_trigger-input" title="请选择" id="xlSelectPicker">
+                            <option value="博士">博士</option>
+                            <option value="硕士">硕士</option>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775067">
+                <div class="f-label">
+                    <span class="f-title">工龄</span>
+                    <span class="f-required">*</span>
+                </div>
+                <div class="f-widget">
+                    <div class="x-combo" wn="_widget_1530519603340">
+                        <!--<input id="glSelectPicker" type="hidden">-->
+                        <!--<div class="x-picker-label" data-watermark="请选择内容" id="glTrigger"></div>-->
+                        <select class="selectpicker fui_trigger-input" title="请选择" style="width:320px;"
+                                id="glSelectPicker">
+                            <option value="5-10年">5-10年</option>
+                            <option value="11-14年">11-14年</option>
+                            <option value="15年以上">15年以上</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775068">
+                <div class="f-label"><span class="f-title">承接项目</span></div>
+                <div class="f-widget">
+                    <div class="x-combocheck" wn="_widget_1530519603389">
+                        <select class="selectpicker fui_trigger-input" multiple title="请选择" id="cjxmSelectPicker">
+                            <option value="大型项目">大型项目</option>
+                            <option value="中型项目">中型项目</option>
+                            <option value="小型项目">小型项目</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775069">
+                <div class="f-label">
+                    <span class="f-title">审查专业</span>
+                    <span class="f-required">*</span>
+                    <!--<div class="f-more">-->
+                        <!--<i class="icon-flow-more"></i>-->
+                    <!--</div>-->
+                </div>
+                <div class="f-widget">
+                    <div class="x-subform" wn="_widget_1530519603418">
+                        <div class="x-subform-content">
+                            <div class="x-subform-body">
+                                <div class="x-subform-line expand sczy-subform-row">
+                                    <div class="x-subform-title">
+                                        <a class="x-subform-delete deleteRow">
+                                            <i class="icon icon-trash"></i>
+                                        </a>
+                                        <i class="icon-arrow icon-arrow-right"></i>
+                                        <span class="x-subform-text subform-text-num">(1) </span>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603429">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                一级目录<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-combo" wn="_widget_1530519603429">
+                                            <select class="selectpicker fui_trigger-input shzyYjSelectPicker"
+                                                    title="请选择">
+                                                <option value="道路专业">道路专业</option>
+                                                <option value="桥梁专业">桥梁专业</option>
+                                                <option value="给排水专业">给排水专业</option>
+                                                <option value="供配电专业">供配电专业</option>
+                                                <option value="园林专业">园林专业</option>
+                                                <option value="自动化控制专业">自动化控制专业</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603812">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                二级专业<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-combocheck" wn="_widget_1530519603812">
+                                            <select class="selectpicker fui_trigger-input shzyEjSelectPicker" multiple
+                                                    title="请选择">
+                                                <option value="道路工程专业">道路工程专业</option>
+                                                <option value="支挡结构及高边坡专业">支挡结构及高边坡专业</option>
+                                                <option value="交通工程专业">交通工程专业</option>
+                                                <option value="立交工程专业">立交工程专业</option>
+                                                <option value="桥、涵专业">桥、涵专业</option>
+                                                <option value="市政给排水专业">市政给排水专业</option>
+                                                <option value="道路供配电及照明专业">道路供配电及照明专业</option>
+                                                <option value="道路绿化及景观设计专业">道路绿化及景观设计专业</option>
+                                                <option value="电气及自控专业">电气及自控专业</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="x-btn style-white x-subform-btn-add sczy_btn_add">
+                            <i class="icon icon-add"></i>
+                            <span>添加记录</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775072">
+                <div class="f-label">
+                    <span class="f-title">资格证书</span>
+                    <!--<div class="f-more"><i class="icon-flow-more"></i></div>-->
+                </div>
+                <div class="f-widget">
+                    <div class="x-subform" wn="_widget_1530519603494">
+                        <div class="x-subform-content">
+                            <div class="x-subform-body">
+                                <div class="x-subform-line expand zgzs-subform-row">
+                                    <div class="x-subform-title">
+                                        <a class="x-subform-delete deleteRow">
+                                            <i class="icon icon-trash"></i>
+                                        </a>
+                                        <i class="icon-arrow icon-arrow-right"></i>
+                                        <span class="x-subform-text subform-text-num">(1) </span>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603505">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                证书名字<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-text" wn="_widget_1530519603505">
+                                            <input type="text" placeholder="请输入文本内容" class="zgzsName">
+                                        </div>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603526">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                证书照片<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-fileupload x-image-upload"
+                                             data-watermark="暂无内容">
+                                            <div class="upload-info" style="display:none;">
+                                                <div class="upload-preview">
+                                                    <img src="" class="upload_show_image image-thumb"
+                                                         style="height: 80px;width: 80px;">
+                                                </div>
+                                                <div class="delete-btn">
+                                                    <i class="icon-flow-close deleteImage"></i>
+                                                </div>
+                                            </div>
+                                            <div class="upload-btn x-btn">
+                                                <div class="btn-wrapper">
+                                                    <i class="icon-plus upload-icon"></i>
+                                                    <span class="upload-text">选择图片</span>
+                                                </div>
+                                                <input type="file" name="file" class="upload-btn-input upload-btn-input-add"
+                                                       multiple="true"
+                                                       accept="image/jpg,image/jpeg,image/png,image/gif"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="x-btn style-white x-subform-btn-add zgzs_btn_add">
+                            <i class="icon icon-add "></i><span>添加记录</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775075">
+                <div class="f-label"><span class="f-title">职称信息</span>
+                    <!--<div class="f-more"><i class="icon-flow-more"></i></div>-->
+                </div>
+                <div class="f-widget">
+                    <div class="x-subform" wn="_widget_1530519603554">
+                        <div class="x-subform-content">
+                            <div class="x-subform-body">
+                                <div class="x-subform-line expand zcxx-subform-row">
+                                    <div class="x-subform-title"><a class="x-subform-delete">
+                                        <i class="icon icon-trash"></i>
+                                    </a>
+                                        <i class="icon-arrow icon-arrow-right"></i>
+                                        <span class="x-subform-text subform-text-num">(1) </span>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603585">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                职称名称<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-text" wn="_widget_1530519603585">
+                                            <input type="text" placeholder="请输入文本内容" class="zcxxName">
+                                        </div>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603606">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                专业选择<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-combo" wn="_widget_1530519603606">
+                                            <select class="selectpicker fui_trigger-input zcxxSelectpicker" title="请选择">
+                                                <option value="道路专业">道路专业</option>
+                                                <option value="桥梁专业">桥梁专业</option>
+                                                <option value="给排水专业">给排水专业</option>
+                                                <option value="供配电专业">供配电专业</option>
+                                                <option value="园林专业">园林专业</option>
+                                                <option value="自动化控制专业">自动化控制专业</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="x-subform-cell" namecol="_widget_1530519603632">
+                                        <div class="x-subform-label">
+                                            <div class="x-subform-label-text">
+                                                职称照片<span class="f-required" style="display: none;">*</span>
+                                            </div>
+                                        </div>
+                                        <div class="x-subform-cell-widget x-fileupload x-image-upload"
+                                             data-watermark="暂无内容">
+                                            <div class="upload-info" style="display:none;">
+                                                <div class="upload-preview">
+                                                    <img src="" class="upload_show_image image-thumb"
+                                                         style="height: 80px;width: 80px;">
+                                                </div>
+                                                <div class="delete-btn">
+                                                    <i class="icon-flow-close deleteImage"></i>
+                                                </div>
+                                            </div>
+                                            <div class="upload-btn x-btn">
+                                                <div class="btn-wrapper">
+                                                    <i class="icon-plus upload-icon"></i>
+                                                    <span class="upload-text">选择图片</span>
+                                                </div>
+                                                <input type="file" name="file" class="upload-btn-input upload-btn-input-add"
+                                                       multiple="true"
+                                                       accept="image/jpg,image/jpeg,image/png,image/gif">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="x-btn style-white x-subform-btn-add zcxx_btn_add">
+                            <i class="icon icon-add"></i><span>添加记录</span></button>
+                    </div>
+                </div>
+            </li>
+            <li class="f-line" wn="_widget_1532485775079">
+                <div class="f-label"><span class="f-title">过往工作业绩上传</span><span class="f-required">*</span></div>
+                <div class="f-description x-subhtml">示例：何年何月在何处做何职位有何成就或奖励</div>
+                <div class="f-widget">
+                    <div class="x-fileupload" wn="_widget_1530519603665" data-watermark="暂无内容">
+                        <div class="upload-btn x-btn">
+                            <div class="btn-wrapper">
+                                <i class="icon-upload upload-icon"></i>
+                                <span class="upload-text">选择文件</span>
+                            </div>
+                            <input type="file" name="file" class="upload-btn-input upload-btn-input-bu" multiple="true">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="x-form-footer x-btn-pane col-1">
+            <div class="nav-item">
+                <button class="x-btn style-blue submitBtn" role="submit">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

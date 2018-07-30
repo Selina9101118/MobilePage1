@@ -94,7 +94,7 @@ span.h_foright{ float:left; font-size:12px; word-spacing:-1px; line-height:24px;
 .h_copybox span{ padding:22px 0 0 0; width:50%; display:inline-block; text-align:center;}
 
 
-.bodybackground{position:fixed;top:0px;left:0px;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center top;z-index:-100;}
+.bodybackground{position:fixed;top:0px;left:0px;width:100%;height:100%;background:url(../bg.jpg) no-repeat center top;z-index:-100;}
 body{background: none}
 .h_leftbox01up{overflow: hidden;}
 UL.h_leftulto LI,ul.h_leftulbo li{height:30px;overflow: hidden;}

@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0033)http://119.84.26.18:85/Home/RuZhu -->
+<html xml:lang="zh" lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>入住申请 - 重庆市南滨路管理委员会招商管理平台</title>
+    <link href="static/ruzu.css" type="text/css" rel="stylesheet">
+    <link href="./static/lrtk.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./static/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="static/ruzhu_list.js"></script>
+    <script type="text/javascript" src="static/ruzhu.js"></script>
+
+    <script type="text/javascript" src="./static/lrtk.js"></script>
+    <link href="./static/default.css" rel="stylesheet">
+    <script src="./static/artDialog.min.js"></script>
+    <script src="./static/WdatePicker.js"></script>
+    <link href="./static/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        $(function () {
+            $("#ivs_content img").click(function () {
+                window.open(this.src);
+            });
+        });
+    </script>
+    <style type="text/css">
+        .l_top_cot a:hover {
+            color: #808080; /*鼠标经过的颜色变化*/
+        }
+
+        .l_cot_name a:hover {
+            color: #d2d2d2; /*鼠标经过的颜色变化*/
+        }
+    </style>
+</head>
+<body onload="initJSHelperEvent();">
+
+
+<!-- 代码 开始 -->
+<div id="top"></div>
+<!-- 代码 结束 -->
+<div id="container">
+    <div class="h_box">
+        <!-- 头部 start -->
+        <div class="bodybackground"></div>
+        <div id="header" class="h_header"><h1 id="logo"><a href="http://119.84.26.18:85/"><img src="./static/logo.png"
+                                                                                               alt="重庆市南滨路管理委员会招商管理平台"></a>
+        </h1></div>
+        <div class="h_searchbox" style="height: 40px;">
+
+            <div class="h_sear_left">
+                <input type="input" value="请输入搜索关键字" class="h_ipt" id="keyword"
+                       onkeypress="    openSearch(event)"><input type="button" value="搜索" class="h_ict"
+                                                                 onclick="    Search()"
+                                                                 onmouseover="this.style.color = &#39;#3a54a9&#39;"
+                                                                 onmouseout="this.style.color = &#39;#000000&#39;">
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+        <!-- 头部 end -->
+        <div id="main" class="l_main">
+            <div class="l_top">
+                <div class="l_top_cot">
+
+                    <span class="mm">栏目导航<img src="./static/mm_03.jpg" alt="导航"></span>
+                </div>
+            </div>
+
+            <div class="l_cot">
+                    <span class="l_cot_name">
+                        当前位置：
+                        <a class="three" title="首页" href="http://119.84.26.18:85/">首页</a>&nbsp;&gt;&nbsp;<a
+                            class="three" href="http://119.84.26.18:85/Web/Home/RuZhu" title="入住申请">入住申请</a>&nbsp;
+                    </span>
+                <div class="d_detail" style="min-height:250px">
+
+                    <table width="100%">
+                        <tbody>
+                        <tr>
+                            <th colspan="2" style="color:#000; font-size:30px; line-height:60px;">企&nbsp;业&nbsp;入&nbsp;住&nbsp;申&nbsp;请&nbsp;表</th>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+                                *企业名称：
+                            </td>
+                            <td>
+                                <input type="text"
+                                       style=" border:solid 1px #808080; width:600px; height:25px; font-size:16px;"
+                                       id="Title">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+                                *企业法人：
+                            </td>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; ">
+                                <input type="text"
+                                       style=" border:solid 1px #808080; width:250px; height:25px; font-size:16px;"
+                                       id="FaRen">
+                                行业性质：<input type="text"
+                                            style=" border:solid 1px #808080; width:263px; height:25px; font-size:16px;"
+                                            id="QiYeXingZhi">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+                                注册资金：
+                            </td>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; ">
+                                <input type="text"
+                                       style=" border:solid 1px #808080; width:250px; height:25px; font-size:16px;"
+                                       id="ZhuCeZiJin">
+                                成立时间：<input type="text"
+                                            onfocus="WdatePicker({ dateFmt: &#39;yyyy-MM-dd&#39;, isShowClear: false, readOnly: true })"
+                                            style=" border:solid 1px #808080; width:263px; height:25px; font-size:16px;"
+                                            id="ChengLiShiJian">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+                                单位地址：
+                            </td>
+                            <td>
+                                <input type="text"
+                                       style=" border: solid 1px #808080; width: 600px; height: 25px; font-size: 16px;"
+                                       id="DanWeiDiZhi">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+
+                                *移动电话：
+
+                            </td>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; ">
+                                <input type="text"
+                                       style=" border:solid 1px #808080; width:250px; height:25px; font-size:16px;"
+                                       id="YiDongDianHua">
+                                座机电话：<input type="text"
+                                            style=" border:solid 1px #808080; width:263px; height:25px; font-size:16px;"
+                                            id="GuDingDianHua">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+
+                                企业规模：
+
+                            </td>
+                            <td>
+                                <textarea style=" border:solid 1px #808080; width:600px; font-size:16px; height:40px;"
+                                          id="QiYeGuiMo"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+
+                                主营业务：
+
+                            </td>
+                            <td>
+                                <textarea style=" border:solid 1px #808080; width:600px;font-size:16px; height:40px;"
+                                          id="ZhuYingYeWu"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+
+                                经营业绩：
+
+                            </td>
+                            <td>
+                                <textarea style=" border:solid 1px #808080; width:600px;  font-size:16px; height:40px;"
+                                          id="JingYinYeJi"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;color:#bb9c9c; font-size:16px; text-align:right;">
+                                入住说明：
+                            </td>
+                            <td>
+                                <textarea style=" border:solid 1px #808080; width:600px; height:80px; font-size:16px; "
+                                          id="Info1"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"
+                                style="color:#bb9c9c; font-size:16px; text-align:right;text-align:center; padding:20px 0px 20px 0px;">
+                                <input type="button" value="确认申请"
+                                       style="border: solid 1px #808080; width: 150px; height: 30px; font-size: 18px;"
+                                       onclick="SubRuZhu()">
+                                &nbsp;&nbsp;&nbsp;
+                                <input type="button" value="取消申请"
+                                       style="border: solid 1px #808080; width: 150px; height: 30px; font-size: 18px;"
+                                       onclick="UrlGet()">
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--二维码区域-->
+                <div style="background: #fff;height: 150px;padding: 0 3%;">
+                    <div style="color: #000;float: right; margin-left: 10px;padding: 7px;text-align: center; width: 82px;border:1px solid #d2d2d2">
+                        <img width="80" height="80" src="./static/swb.png" style="margin-bottom: 5px;">
+                        <span style="color:#3e457e">弹子石CBD电脑版</span>
+                    </div>
+                    <div style="color: #000;float: right; margin-left: 10px;padding: 7px;text-align: center; width: 82px;border:1px solid #d2d2d2">
+                        <img width="80" height="80" src="./static/dhqzk.png" style="margin-bottom: 5px;">
+                        <span style="color:#3e457e">弹子石CBD手机版</span>
+                    </div>
+                    <div style="color: #000;float: right; margin-left: 10px;padding: 7px;text-align: center; width: 82px;border:1px solid #d2d2d2">
+                        <img width="80" height="80" src="./static/shhq.jpg" style="margin-bottom: 5px;">
+                        <span style="color:#3e457e">弹子石CBD微信公共号</span>
+                    </div>
+                </div>
+
+
+                <div class="d_hotlist">
+                    <div class="d_hotlist_title">
+                        <a href="javascript:" title="近期热点" class="current">近期热点</a>
+                        <a href="javascript:" title="年度热点">年度热点</a>
+                        <a href="javascript:" title="整站热点">整站热点</a>
+                        <span>&nbsp;&nbsp;&nbsp;</span><span>发布日期</span>
+                    </div>
+                    <div class="d_hotlist_cot" style="display: none;">
+                        <ul>
+                            <li><a href="http://119.84.26.18:85/Home/Article/65" title="重庆市互联网界联合会成立" target="_blank"
+                                   style="left: 0%;">· 重庆市互联网界联合会成立</a><span style="left: 60%;"></span><span
+                                    style="left: 80%;">2016/11/15 23:49:31</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/64" title="重庆企业首创ZPLC技术物联网光环境系统"
+                                   target="_blank" style="left: 0%;">· 重庆企业首创ZPLC技术物联网光环境系统</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/15 23:48:35</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/63" title="重庆李家花园隧道改造工程主体完工"
+                                   target="_blank" style="left: 0%;">· 重庆李家花园隧道改造工程主体完工</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/15 23:44:52</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/44" title="重庆强力推进“质量强市”战略" target="_blank"
+                                   style="left: 0%;">· 重庆强力推进“质量强市”战略</a><span style="left: 60%;"></span><span
+                                    style="left: 80%;">2016/11/15 19:19:51</span></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="d_hotlist_cot" style="display: none;">
+                        <ul>
+                            <li><a href="http://119.84.26.18:85/Home/Article/7" title="孙政才黄奇帆与徐守盛杜家毫率领的湖南省党政代表团座谈"
+                                   target="_blank" style="left: 0%;">· 孙政才黄奇帆与徐守盛杜家毫率领的湖南省党政代表团座谈</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/14 15:00:44</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/4" title="2016中国国际友好城市大会在渝开幕"
+                                   target="_blank" style="left: 0%;">· 2016中国国际友好城市大会在渝开幕</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/14 14:17:32</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/3" title="孙政才：努力开创重庆文艺事业繁荣发展新局面"
+                                   target="_blank" style="left: 0%;">· 孙政才：努力开创重庆文艺事业繁荣发展新局面</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/14 14:16:28</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/2" title="重庆企业首创ZPLC技术物联网光环境系统"
+                                   target="_blank" style="left: 0%;">· 重庆企业首创ZPLC技术物联网光环境系统</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/14 14:12:56</span></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="d_hotlist_cot" style="display: block;">
+                        <ul>
+                            <li><a href="http://119.84.26.18:85/Home/Article/66" title="区城乡建委：加快创新型城市建设谋划"
+                                   target="_blank" style="left: 0%;">· 区城乡建委：加快创新型城市建设谋划</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/15 23:53:58</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/8" title="六纵线南岸南段工程方案确定 双向八车道 设计时速每小时80公里"
+                                   target="_blank" style="left: 0%;">· 六纵线南岸南段工程方案确定 双向八车道 设计时速每小时80公里</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/14 15:12:35</span></li>
+                            <li><a href="http://119.84.26.18:85/Home/Article/6" title="重庆市南岸区积极推进长江沿岸消落带治理"
+                                   target="_blank" style="left: 0%;">· 重庆市南岸区积极推进长江沿岸消落带治理</a><span
+                                    style="left: 60%;"></span><span style="left: 80%;">2016/11/14 14:58:56</span></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--主区域结束-->
+
+
+    </div>
+
+
+    <!-- 底部 start -->
+    <div class="h_footer">
+        <div class="h_footerbox">
+            <div class="h_ccrr">
+            <span class="h_foright" style="line-height: 24px;">
+                Copyright 2016 by ChongQing DanZiShi Central Business District. All rights Reserved. <br>
+                版权所有：重庆弹子石中央商务区管理委员会　单位地址：重庆市南岸区南滨路<br>
+                工作时间：工作日9:00-17:00　咨询电话：68669552
+            </span>
+                <span class="h_foright2"></span>
+            <span class="h_nmu">
+                <div class="h_nmubox" hh="95" style="line-height: 95px;">
+                    访问量：
+                    <!--访问量统计--><span class="addcount">
+                        2592275
+                    </span>
+                </div>
+            </span>
+                <div class="h_double">
+                    <div class="h_doublebox">
+                        <span class="h_d_01"><a href="http://119.84.26.18:85/Home/RuZhu" target="_blank"><img alt="领导信箱"
+                                                                                                              src="./static/footericon_20.png"></a><span><a
+                                href="http://119.84.26.18:85/Home/RuZhu" target="_blank">领导信箱</a></span></span>
+                        <span class="h_d_01"><a href="http://119.84.26.18:85/Home/RuZhu"><img alt="联系我们"
+                                                                                              src="./static/footericon_22.png"></a><span><a
+                                href="http://119.84.26.18:85/Home/RuZhu">联系我们</a></span></span>
+                    </div>
+                </div>
+                <div class="h_copy"><span class="h_copybox"><span><a href="http://www.miibeian.gov.cn/" target="_blank"><img
+                        alt="1" src="./static/footericon_25.png"></a><a href="http://www.miibeian.gov.cn/"
+                                                                        target="_blank">渝ICP备16023665号</a></span><span
+                        style="padding-top:20px"><img alt="党政机关" src="./static/footericon_27.png"></span></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 end -->
+</div>
+
+<script>
+
+    function SubRuZhu() {
+        if ($("#Title").val() == "") {
+            art.dialog({content: '入驻企业名称不能为空！', lock: true});
+            return;
+        }
+        if ($("#FaRen").val() == "") {
+            art.dialog({content: '法人不能为空！', lock: true});
+            return;
+        }
+
+        if ($("#ChengLiShiJian").val() == "") {
+            art.dialog({content: '公司成立时间不能为空！', lock: true});
+            return;
+        }
+        if ($("#YiDongDianHua").val() == "") {
+            art.dialog({content: '移动电话不能为空！', lock: true});
+            return;
+        }
+        $.ajax({
+            url: "/Home/RuZhu",
+            type: 'post',
+            dataType: 'json',
+            data: {
+                Title: $("#Title").val(),
+                FaRen: $("#FaRen").val(),
+                QiYeXingZhi: $("#QiYeXingZhi").val(),
+                ZhuCeZiJin: $("#ZhuCeZiJin").val(),
+                ChengLiShiJian: $("#ChengLiShiJian").val(),
+                DanWeiDiZhi: $("#DanWeiDiZhi").val(),
+                GuDingDianHua: $("#GuDingDianHua").val(),
+                YiDongDianHua: $("#YiDongDianHua").val(),
+                QiYeGuiMo: $('#QiYeGuiMo').val(),
+                ZhuYingYeWu: $("#ZhuYingYeWu").val(),
+                JingYinYeJi: $("#JingYinYeJi").val(),
+                Info1: $("#Info1").val()
+            },
+            success: function (msg) {
+
+                if (msg != null) {
+                    if (msg.message == 'ok') {
+                        ShowMessage("提交资料成功，等待审核！");
+                        window.location = '/Home/';
+                    } else {
+                        ShowMessage(msg.message);
+                    }
+                }
+            },
+            error: function () {
+                ShowMessage("保存失败！");
+            }
+        });
+
+    }
+
+    function UrlGet() {
+        window.location = '/Home/';
+    }
+
+
+    function ShowMessage(message) {
+        art.dialog({
+            cancel: false,
+            title: '',
+            icon: 'warning',
+            content: message,
+            time: 1500
+        });
+    }
+</script>
+
+</body>
+</html>

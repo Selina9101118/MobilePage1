@@ -16,14 +16,14 @@ ul,li,a,img,p,span,h1,input,select{ margin:0; padding:0; text-decoration:none; l
     color: #999;
     font-size: 15px;
     padding: 0 0 0 30px;
-    background: none;
     display: inline-block;
     float: left;
+    margin-left: 43px;
+    background-color: #fff;
 }
 .h_sear_left input.h_ict{
     width: 66px;
     height: 42px;
-    background: url(../images/searchbtn.jpg) no-repeat left center;
     padding: 1px 0;
     font-family: "微软雅黑";
     /* color: #3d457d; */
@@ -31,6 +31,7 @@ ul,li,a,img,p,span,h1,input,select{ margin:0; padding:0; text-decoration:none; l
     float: left;
     border: 1px solid #dcdcdc;
     border-left: none;
+    background-color: #f8f8f8;
 }
 .clear{ clear:both;}
 .h_sear_right{ position:absolute; color:#fff; width:204px; right:0; bottom:0; text-align:right;}
@@ -117,7 +118,7 @@ span.h_foright{ float:left; font-size:12px; word-spacing:-1px; line-height:24px;
 .h_copybox span{ padding:22px 0 0 0; width:50%; display:inline-block; text-align:center;}
 
 
-.bodybackground{position:fixed;top:0px;left:0px;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center top;z-index:-100;}
+.bodybackground{position:fixed;top:0px;left:0px;width:100%;height:100%;background:url(../bg.jpg) no-repeat center top;z-index:-100;}
 body{background: none}
 .h_leftbox01up{overflow: hidden;}
 UL.h_leftulto LI,ul.h_leftulbo li{height:30px;overflow: hidden;}
@@ -152,7 +153,7 @@ span.h_foright{height:auto;border:none;}/*js控制line-height*/
 .g_itemtitle{ position:absolute; right:5px; top:0; width:4%; background:#008080; height:100px; color:#fff; text-align:center; line-height:14px;}
 .g_left_b{ height:146px; background:#4169E1; margin:11px 0 0 0; width:100%; overflow:hidden;}
 .g_left_b_box{ padding:0 2%; width:96%; height:146px;}
-.g_dd{ padding:7px 0;}
+.g_dd{ padding:4px 0;}
 .g_dd ul li{ line-height:29px; height:29px; overflow:hidden; width:50%; float:left;}
 .g_dd ul li:hover{ color:#e5e2e2;}
 .g_right{ width:27%; margin:11px 0 0 1%; float:left;}
@@ -257,6 +258,7 @@ span.b_span01{
     text-align: center;
     font-size: 14px;
     float: left;
+    margin-top: 15px;
 }
 span.b_span01 img{ padding:15px 0 8px;}
 span.b_span01 a{ color:#fff; display:block;}
@@ -348,13 +350,12 @@ span.n_jq_iconbg span{ display:block; text-align:center;}
 .n_introright span a{ color:#d5410d;}
 .n_360left_bottom{
     height: 80PX;
-    background: #fff;
     line-height: 30px;
     padding: 8px 3%;
     width: 94%;
     color: #000;
 }
-.n_360left_bottom span{ display:inline-block; width:50%; float:left; color:#555; font-size:14px;}
+.n_360left_bottom span{ display:inline-block; width:50%; float:left; color:#fff; font-size:14px;}
 .n_360left_bottom span.n_cc{ width:45%;}
 .n_360left_bottom span.n_dd{ width:55%;}
 .n_380right{ width:28%; *width:27.5%; float:right; margin:0 0 0 1%; overflow:hidden;}

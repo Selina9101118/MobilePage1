@@ -1,0 +1,10 @@
+body {margin: 0;padding: 0;}
+.preview-header {height: 49px;background-color: #d9534f; color: #eee; border-bottom: 1px #ddd solid;margin: 0;padding: 0;line-height: 50px;text-align: center;}
+.copy-link {color: #fff;margin-left: 10px;}
+.preview-mobile-outer {width: 700px;height:600px;overflow: hidden;margin: 40px auto;}
+.p-left {width:375px;height:480px;padding:40px 1px 60px;background: url('../imgs/phone.png') 0 0 no-repeat;float: left;}
+.pl-content {background: #fff;height:480px;overflow:hidden;box-sizing: border-box;}
+.p-right {margin-left: 20px;width: 256px;height:600px;float: left;}
+.p-right h3 {margin-top: 30px;}
+.qrcode {width:256px; height: 256px;}
+

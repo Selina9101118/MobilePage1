@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://bglng.zhubajie.la/preview/5002246/5002065 -->
+<html id="html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>页面预览</title>
+    <script async="" src="./页面预览_files/ueAgent.js.下载"></script><script>
+        (function (j) {
+            var h = j.sdkUrl,
+                a = j.name,
+                d = this,
+                g = d.document,
+                f = null,
+                e = null;
+            d.AGENT20170621 = a;
+            d[a] = d[a] || function (i) {
+                return function () {
+                    (d[a]._agenti = d[a]._agenti || []).push([i, arguments])
+                }
+            };
+            var b = ["track", "trackSignup", "userIdentify"];
+            for (var c = 0; c < b.length; c++) {
+                d[a][b[c]] = d[a].call(null, b[c])
+            }
+            if (!d[a].lt) {
+                f = g.createElement("script"), e = g.getElementsByTagName("script")[0];
+                f.async = true;
+                f.src = h;
+                e.parentNode.insertBefore(f, e);
+                d[a].lt = 1 * new Date();
+                d[a].para = j
+            }
+        })({
+            sdkUrl: location.protocol + "//web.ue.zhubajie.la/sdk/ueAgent.js",
+            sendLimit: 1,
+            showLog: false,
+            name: "ueAgent",
+            autoTrack: true,
+            apiHost: location.protocol + "//sdk.ue.zhubajie.la",
+            appId: 30
+        });
+    </script>
+    <link rel="stylesheet" href="./页面预览_files/toastr.css">
+    <link rel="stylesheet" href="./页面预览_files/preview.css">
+</head>
+<body>
+<div class="preview-header">
+    
+        
+        没有发布, 暂时没还没有推广链接哦~~
+        
+    
+
+</div>
+
+<div class="preview-pc-outer">
+    <iframe frameborder="0" width="100%" height="600" scrolling="yes" seamless="seamless" src="./页面预览_files/5002065.html" style="height: 586px;">
+        您的浏览器不支持iframe, 请升级浏览器
+    </iframe>
+</div>
+
+<script type="text/javascript" src="./页面预览_files/jquery.min.js.下载"></script>
+<script type="text/javascript" src="./页面预览_files/jquery.qrcode.min.js.下载"></script>
+<script src="./页面预览_files/clipboard.min.js.下载"></script>
+<script src="./页面预览_files/toastr.js.下载"></script>
+<script type="text/javascript" src="./页面预览_files/bglUtil.js.下载"></script>
+<script>
+
+    if($('.preview-mobile-outer').length){
+        $('#qrcode').qrcode({
+            text: 'http://bglpre.zhubajie.la/preview/5002246/5002065'
+        });
+    }
+
+    if($('.preview-pc-outer').length){
+        var $iframe = $('iframe');
+        var $window = $(window);
+        $iframe.css('height', $window.height()-50);
+        $(window).on('resize',function(){
+            $iframe.css('height', $window.height()-50);
+        });
+    }
+
+
+    if($('.copy-link').length){
+        $('.copy-link').click(function(e){e.preventDefault();});
+        var clipboard = new Clipboard('.copy-link');
+
+        clipboard.on('success', function(e) {
+            util.Tips('复制成功', 'success');
+        });
+    }
+
+</script>
+
+
+
+</body></html>

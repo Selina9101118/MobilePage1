@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--[if lte IE 9]>
+    <script type="text/javascript">window.location = "/error/notsupported";</script><![endif]--><title>专家注册页</title>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1">
+    <meta name="keywords" content="简道云,在线表单,在线报表,数据搜集,数据管理,应用定制">
+    <meta name="description" content="简道云,利用在线表单和在线报表搭建数据管理应用,无需编程,注册即用">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="js/bootstrap-select/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap-select/css/bootstrap-select.css"/>
+    <link href="css/fx_pc_core.css" rel="stylesheet" type="text/css">
+    <link href="css/form_public.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-select/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>
+    <!--<script type="text/javascript" src="js/fx_pc_vendor.js"></script>-->
+    <!--<script type="text/javascript" src="js/fx_pc_core.js"></script>-->
+    <script type="text/javascript" src="js/validate.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <style type="text/css">
+        .label-notnull{
+            color: red;
+            font-size: 12px;
+        }
+        .fui_text{
+            width: 240px;
+            height: 30px;
+        }
+        .fui_combo{
+            width: 270px;
+            height: 30px; 
+            line-height: 28px;
+        }
+        .fui_trigger-input{
+            width: 240px!important;
+            padding: 0!important;
+        }
+        .subform-cell .fui_combocheck .dropdown-toggle{
+            width: 200px !important;
+        }
+        .subform-cell .fui_combocheck .dropdown-menu{
+            max-height: 1000px!important;
+        }
+        .subform-cell .fui_combocheck.fui_combocheck_second{
+            width: 470px!important;
+        }
+        .subform-cell .fui_combo_table .bootstrap-select{
+            width: 200px !important;
+        }
+    </style>
+    <script type="text/javascript">
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "mobileIndex.html"
+        } else {
+            console.log('PC端');
+        }
+    </script>
+</head>
+<body>
+<div></div>
+<div id="content">
+    <div class="form">
+        <div class="content">
+            <div class="form fui-form normal-layout" widgetname="_widget_1532311113877" style="width: 780px;">
+                <div class="header"><span>专家注册页</span></div>
+                <div class="widget-wrapper">
+                    <ul>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113878">
+                            <div class="fl-label"><span class="label-title">姓名</span>
+                                <span class="label-notnull">*</span>
+                            </div>
+                            <div class="fl-widget">
+                                <div class="fui_text" widgetname="_widget_1530519603210">
+                                    <!--x-input-error-->
+                                    <input class="x-input" type="text" id="specialistName">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113879">
+                            <div class="fl-label"><span class="label-title">身份证号</span>
+                                <span class="label-notnull">*</span></div>
+                            <div class="fl-widget">
+                                <div class="fui_text" widgetname="_widget_1530519603266">
+                                    <input class="x-input" id="specialistIdCard">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113880">
+                            <div class="fl-label"><span class="label-title">性别</span><span
+                                    class="label-notnull">*</span></div>
+                            <div class="fl-widget">
+                                <div class="fui_combo" widgetname="_widget_1530519603249" >
+                                    <select class="selectpicker fui_trigger-input" title="请选择" id="sexSelectPicker">
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113881">
+                            <div class="fl-label"><span class="label-title">最高学历</span><span
+                                    class="label-notnull">*</span></div>
+                            <div class="fl-widget">
+                                <div class="fui_combo" widgetname="_widget_1530519603322" >
+                                    <select class="selectpicker fui_trigger-input" title="请选择" id="xlSelectPicker">
+                                        <option value="博士">博士</option>
+                                        <option value="硕士">硕士</option>
+                                        <option value="本科">本科</option>
+                                        <option value="专科">专科</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113881">
+                            <div class="fl-label"><span class="label-title">工龄</span><span
+                                    class="label-notnull">*</span></div>
+                            <div class="fl-widget">
+                                <div class="fui_combo" widgetname="_widget_1530519603322" >
+                                    <select class="selectpicker fui_trigger-input" title="请选择" style="width:320px;" id="glSelectPicker">
+                                        <option value="5-10年">5-10年</option>
+                                        <option value="11-14年">11-14年</option>
+                                        <option value="15年以上">15年以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113883">
+                            <div class="fl-label"><span class="label-title">承接项目</span></div>
+                            <div class="fl-widget">
+                                <div class="fui_combocheck" widgetname="_widget_1530519603389" >
+                                    <select class="selectpicker fui_trigger-input" multiple title="请选择" id="cjxmSelectPicker">
+                                        <option value="大型项目">大型项目</option>
+                                        <option value="中型项目">中型项目</option>
+                                        <option value="小型项目">小型项目</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113884">
+                            <div class="fl-label">
+                                <span class="label-title">审查专业</span>
+                                <span class="label-notnull">*</span>
+                            </div>
+                            <div class="fl-widget">
+                                <div class="fui_subform" widgetname="_widget_1530519603418">
+                                    <div class="subform-head">
+                                        <div class="subform-row">
+                                            <div class="row-head"></div>
+                                            <div class="subform-cell" style="left: 66px; width: 210px;">
+                                                <span class="form-cell">一级目录</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 276px; width: 330px;">
+                                                <span class="form-cell">二级专业</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 606px; width: 30px;">
+                                                <span class="form-cell">操作</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subform-content ps" >
+                                        <div class="subform-row sczy-subform-row" row-idx="0" >
+                                            <div class="subform-cell" style="left: 66px; width: 210px;"
+                                                 namecol="_widget_1530519603429">
+                                                <div widgetname="_widget_1530519603429" style="width: 200px; height: 30px;">
+                                                    <div class="fui_combo_table" widgetname="_widget_1530519603429" style="width: 200px; height: 30px; line-height: 28px;">
+                                                        <select class="selectpicker fui_trigger-input shzyYjSelectPicker" title="请选择" >
+                                                            <option value="道路专业">道路专业</option>
+                                                            <option value="桥梁专业">桥梁专业</option>
+                                                            <option value="给排水专业">给排水专业</option>
+                                                            <option value="供配电专业">供配电专业</option>
+                                                            <option value="园林专业">园林专业</option>
+                                                            <option value="自动化控制专业">自动化控制专业</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 276px; width: 330px;"
+                                                 namecol="_widget_1530519603812">
+                                                <div widgetname="_widget_1530519603812" style="width: 330px; height: 30px;">
+                                                    <div class="fui_combocheck_second" widgetname="_widget_1530519603812" style="width: 330px; height: 30px; line-height: 28px;">
+                                                        <select class="selectpicker fui_trigger-input shzyEjSelectPicker" multiple title="请选择" >
+                                                            <option value="道路工程专业">道路工程专业</option>
+                                                            <option value="支挡结构及高边坡专业">支挡结构及高边坡专业</option>
+                                                            <option value="交通工程专业">交通工程专业</option>
+                                                            <option value="立交工程专业">立交工程专业</option>
+                                                            <option value="桥、涵专业">桥、涵专业</option>
+                                                            <option value="市政给排水专业">市政给排水专业</option>
+                                                            <option value="道路供配电及照明专业">道路供配电及照明专业</option>
+                                                            <option value="道路绿化及景观设计专业">道路绿化及景观设计专业</option>
+                                                            <option value="电气及自控专业">电气及自控专业</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 606px; width: 30px;" namecol="_widget_1530519603812">
+                                                <a href="javascript:void(0)" class="deleteRow"> 删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fix-row-head">
+                                        <div class="row-head" row-idx="0">
+                                            <div class="row-num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="fix-col-head"></div>
+                                    <div class="btn-pane" style="max-width: 720px;">
+                                        <div class="sczy_btn_add btn-add x-btn style-none" widgetname="_widget_1532311113887">
+                                            <i class="icon-add"></i>
+                                            <span>添加</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113888">
+                            <div class="fl-label">
+                                <span class="label-title">资格证书</span>
+                            </div>
+                            <div class="fl-widget">
+                                <div class="fui_subform" widgetname="_widget_1530519603418">
+                                    <div class="subform-head">
+                                        <div class="subform-row">
+                                            <div class="row-head"></div>
+                                            <div class="subform-cell" style="left: 66px; width: 210px;">
+                                                <span class="form-cell">证书名字</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 276px; width: 330px;">
+                                                <span class="form-cell">证书照片</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 606px; width: 30px;">
+                                                <span class="form-cell">操作</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subform-content ps" >
+                                        <div class="subform-row zgzs-subform-row" row-idx="0" >
+                                            <div class="subform-cell" style="left: 66px; width: 210px;"
+                                                 namecol="_widget_1530519603429">
+                                                <div widgetname="_widget_1530519603429" style="width: 200px; height: 30px;">
+                                                    <div class="fui_combo_table" widgetname="_widget_1530519603429" style="width: 200px; height: 30px; line-height: 28px;">
+                                                        <input class="x-input zgzsName" type="text" >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 276px; width: 330px;" namecol="_widget_1530519603812">
+                                                <div widgetname="_widget_1530519603812" style="width: 310px; height: 30px;">
+                                                    <div class="fui_combocheck_second" widgetname="_widget_1530519603812" style="width: 330px; height: 30px; line-height: 28px;">
+                                                        <form action="#" method="post" enctype="multipart/form-data" class="fui_combocheck_form">
+                                                            <input type="file" name="file" class="res_file" style="font-size: 12px">
+                                                        </form>
+                                                        <div class="show_image" style="display: none">
+                                                            <img src="" class="upload_show_image" style="height: 30px">
+                                                            <a href="javascript:void(0)" class="deleteImage"> 删除</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 606px; width: 30px;" namecol="_widget_1530519603812">
+                                                <a href="javascript:void(0)" class="deleteRow"> 删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fix-row-head">
+                                        <div class="row-head" row-idx="0">
+                                            <div class="row-num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="fix-col-head"></div>
+                                    <div class="btn-pane" style="max-width: 720px;">
+                                        <div class="zgzs_btn_add btn-add x-btn style-none" widgetname="_widget_1532311113887">
+                                            <i class="icon-add"></i>
+                                            <span>添加</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113896">
+                            <div class="fl-label"><span class="label-title">职称信息</span></div>
+                            <div class="fl-widget">
+                                <div class="fui_subform" widgetname="_widget_1530519603418">
+                                    <div class="subform-head">
+                                        <div class="subform-row">
+                                            <div class="row-head"></div>
+                                            <div class="subform-cell" style="left: 66px; width: 210px;">
+                                                <span class="form-cell">职称名称</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 276px; width: 210px;">
+                                                <span class="form-cell">专业选择</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 486px; width: 190px;">
+                                                <span class="form-cell">职称照片</span>
+                                            </div>
+                                            <div class="subform-cell" style="left: 676px; width: 30px;">
+                                                <span class="form-cell">操作</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subform-content ps" >
+                                        <div class="subform-row zcxx-subform-row" row-idx="0" >
+                                            <div class="subform-cell" style="left: 66px; width: 210px;" namecol="_widget_1530519603429">
+                                                <div widgetname="_widget_1530519603429" style="width: 200px; height: 30px;">
+                                                    <div class="fui_combo_table" widgetname="_widget_1530519603429" style="width: 200px; height: 30px; line-height: 28px;">
+                                                        <input class="x-input zcxxName" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 276px; width: 210px;" namecol="_widget_1530519603429">
+                                                <div widgetname="_widget_1530519603429" style="width: 200px; height: 30px;">
+                                                    <div class="fui_combo_table" widgetname="_widget_1530519603429" style="width: 200px; height: 30px; line-height: 28px;">
+                                                        <select class="selectpicker fui_trigger-input zcxxSelectpicker" title="请选择">
+                                                            <option value="道路专业">道路专业</option>
+                                                            <option value="桥梁专业">桥梁专业</option>
+                                                            <option value="给排水专业">给排水专业</option>
+                                                            <option value="供配电专业">供配电专业</option>
+                                                            <option value="园林专业">园林专业</option>
+                                                            <option value="自动化控制专业">自动化控制专业</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 486px; width: 190px;" namecol="_widget_1530519603812">
+                                                <div widgetname="_widget_1530519603812" style="width:190px; height: 30px;">
+                                                    <div class="fui_combocheck_second" widgetname="_widget_1530519603812" style="width: 330px; height: 30px; line-height: 28px;">
+                                                        <form action="#" method="post" enctype="multipart/form-data" class="fui_combocheck_form">
+                                                            <input type="file" name="file" class="res_file" style="font-size: 12px">
+                                                        </form>
+                                                        <div class="show_image" style="display: none">
+                                                            <img src="" class="upload_show_image" style="height: 30px">
+                                                            <a href="javascript:void(0)" class="deleteImage"> 删除</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subform-cell" style="left: 676px; width: 30px;" namecol="_widget_1530519603812">
+                                                <a href="javascript:void(0)" class="deleteRow"> 删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fix-row-head">
+                                        <div class="row-head" row-idx="0">
+                                            <div class="row-num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="fix-col-head"></div>
+                                    <div class="btn-pane" style="max-width: 720px;">
+                                        <div class="zcxx_btn_add btn-add x-btn style-none" widgetname="_widget_1532311113887">
+                                            <i class="icon-add"></i>
+                                            <span>添加</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="widget-view x-grid-col-12" widgetname="_widget_1532311113905">
+                            <div class="fl-label"><span class="label-title">过往工作业绩上传</span><span
+                                    class="label-notnull">*</span></div>
+                            <div class="fl-description x-subhtml">示例：何年何月在何处做何职位有何成就或奖励</div>
+                            <div class="fl-widget">
+                                <div class="fui_upload" widgetname="_widget_1530519603665" style="width: 100%;">
+                                    <div class="upload-btn x-btn style-white">
+                                        <i class="icon-widget-upload upload-icon"></i>
+                                        <span>选择文件</span>
+                                        <form class="upload-form" action="#" enctype="multipart/form-data" method="post">
+                                            <input name="file" class="upload-btn-input" multiple="multiple" type="file">
+                                        </form>
+                                    </div>
+                                    <div class="fui_progress x-ui-hidden" widgetname="_widget_1532311113906" style="width: 420px; height: 30px;">
+                                        <div class="progress-bar progress-bar-info active progress-bar-striped" style="width: 0%;"></div>
+                                        <span class="progress-message" style="line-height: 30px;"></span>
+                                    </div>
+                                    <div class="upload-preview-list" data-watermark="当前没有文件上传"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div class="btn-pane middle single">
+                        <div class="ok-btn x-btn style-green submitBtn" widgetname="_widget_1532311113907" style="width: 120px;">
+                            <span>提交</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="x-public-thumbnail"><img src="image/form_thumbnail.png">-->
+    <!--</div>-->
+    <!--<div class="x-public-logo"><a href="https://www.jiandaoyun.com/"-->
+                                  <!--target="_blank"><span>本内容由用户通过「简道云」发布，并不代表简道云的立场</span>-->
+        <!--<div class="right">-->
+            <!--<div class="text">Powered by</div>-->
+            <!--<div class="image"><img src="image/logo-pure.png"></div>-->
+        <!--</div>-->
+    <!--</a></div>-->
+</div>
+
+</body>
+</html>

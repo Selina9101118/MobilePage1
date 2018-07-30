@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UE平台-404</title>
+    <style type="text/css">
+    html,body{
+        height:100%;
+        font-family: 微软雅黑;
+        font-size: 16px;
+    }
+    html,body, div {
+        margin:0;
+        padding:0;
+    }
+    div {
+        line-height: 50px;
+        position: relative;
+        top:50%;
+        transform: translateY(-100%);
+        text-align: center;
+        font-style: normal;
+        font-weight:bold;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        抱歉，您请求的页面未找到。
+    </div>
+</body>
+</html>
